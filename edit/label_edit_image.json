@@ -1,0 +1,47 @@
+{
+  "id": "#childID.1.1",
+  "type": "group",
+  "label": "Chụp ảnh đối tác",
+  "layout": "vertical",
+  "elements": [
+    {
+      "id": "#childID.1.1.1",
+      "parentId": "#childID.1.1",
+      "type": "label",
+      "properties": {
+        "value": "#options.value",
+        "required": true,
+        "fontSize": "14",
+        "fontWeight": "normal" // normal
+      },
+      "rule": [],
+      "elements": []
+    },
+    {
+      "id": "#childID.1.1.2",
+      "parentId": "#childID.1.1",
+      "type": "image",
+      "properties": {
+        "required": true,
+        "description": "Cần chụp ảnh để",
+        "minimum": 0
+      },
+      "rule": [],
+      "elements": []
+    },
+    {
+      "id": "#childID.1.1.3",
+      "parentId": "#childID.1.1",
+      "type": "text",
+      "label": "Nhận xét của KTV",
+      "properties": {
+        "required": true,
+        "readonly": false,
+        "length": 300,
+        "multiline": false,
+        "hint": "Nhập Nhận xét của KTV"
+      },
+      "rule": []
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "id": "3025c8fa-98b2-4b70-831c-8f816822e4b2",
+    "step": "1",
+    "version": "1",
+    "type_job": "BTPOP",
+    "type_pop": "INDOOR",
+    "tool": "btcomp",
+    "jobType": "bt",
+    "type": "mpd",
+    "label": "buocws",
+    "elements": [
+      {
+        "id": "4b668dc4-02a8-4027-ad04-28ae9e5d70a2",
+        "step": "1.1",
+        "version": "1",
+        "type_job": "BTPOP",
+        "type_pop": "INDOOR",
+        "label": "tieu chi cha",
+        "elements": [
+          {
+            "id": "b05b36d2-ec7f-46c3-8c31-a80850e37a2e",
+            "step": "1.1.1",
+            "version": "1",
+            "type_job": "BTPOP",
+            "type_pop": "INDOOR",
+            "layout": "vertical",
+            "optionType": "labelAndImage",
+            "label": "tieu chi con",
+            "elements": [
+              {
+                "id": "b05b36d2-ec7f-46c3-8c31-a80850e37a2e.1",
+                "parentId": "b05b36d2-ec7f-46c3-8c31-a80850e37a2e",
+                "type": "label",
+                "properties": {
+                  "value": "Chụp ảnh đối tác",
+                  "background": "#FFFFFF",
+                  "textColor": "#000000",
+                  "fontSize": "20",
+                  "fontWeight": "bold"
+                },
+                "rule": [],
+                "elements": []
+              },
+              {
+                "id": "b05b36d2-ec7f-46c3-8c31-a80850e37a2e.2",
+                "parentId": "b05b36d2-ec7f-46c3-8c31-a80850e37a2e",
+                "type": "image",
+                "properties": {
+                  "required": true,
+                  "length": 3,
+                  "description": "Cần chụp ảnh để",
+                  "minimum": 0
+                },
+                "rule": [],
+                "elements": []
+              },
+              {
+                "id": "b05b36d2-ec7f-46c3-8c31-a80850e37a2e.3",
+                "parentId": "b05b36d2-ec7f-46c3-8c31-a80850e37a2e",
+                "type": "text",
+                "label": "Nhận xét của KTV",
+                "properties": {
+                  "required": true,
+                  "value": "true",
+                  "readonly": false,
+                  "length": 300,
+                  "multiline": false,
+                  "hint": "Nhập Nhận xét của KTV"
+                },
+                "rule": []
+              }
+            ],
+            "requireImage": true,
+            "requireNote": false,
+            "minimum": null,
+            "maximum": null,
+            "isEdit": false
+          }
+        ],
+        "isEdit": false
+      }
+    ],
+    "isEdit": false,
+    "isEnable": true
+  }
+]

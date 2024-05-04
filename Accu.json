@@ -1,0 +1,180 @@
+[
+  {
+    "id": "182ba3f0-ea87-4f24-905b-62ee8641f639",
+    "step": "1",
+    "version": "1",
+    "type_job": "BTPOP",
+    "type_pop": "INDOOR",
+    "tool": "btcomp",
+    "jobType": "bt",
+    "type": "mpd",
+    "label": "bước 1",
+    "elements": [
+      {
+        "id": "1b940846-f503-479d-8338-4a2fb6082ba4",
+        "step": "1.1",
+        "version": "1",
+        "type_job": "BTPOP",
+        "type_pop": "INDOOR",
+        "label": "tiêu chí cha ",
+        "elements": [
+          {
+            "id": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e",
+            "step": "1.1.1",
+            "version": "1",
+            "type_job": "BTPOP",
+            "type_pop": "INDOOR",
+            "layout": "vertical",
+            "optionType": "accu",
+            "label": "tiêu chí con",
+            "elements": [
+              {
+                "id": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e.1",
+                "type": "group",
+                "layout": "horizontal",
+                "elements": [
+                  {
+                    "id": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e.1.1",
+                    "parentId": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e.1",
+                    "type": "label",
+                    "properties": {
+                      "value": "Thực hiện đo kiểm accu",
+                      "background": "#FFFFFF",
+                      "textColor": "#000000",
+                      "fontSize": "20",
+                      "fontWeight": "bold"
+                    },
+                    "rule": [],
+                    "elements": []
+                  },
+                  {
+                    "id": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e.1.2",
+                    "type": "switch",
+                    "parentId": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e.1",
+                    "label": "Kiểm tra cửa chính ...",
+                    "properties": {
+                      "value": false,
+                      "readonly": false,
+                      "offLabel": "Yes",
+                      "onLabel": "No"
+                    },
+                    "rule": [
+                      {
+                        "action": "hide",
+                        "condition": {
+                          "ref": "1.2.1",
+                          "schema": {
+                            "value": true
+                          }
+                        }
+                      },
+                      {
+                        "action": "hide",
+                        "condition": {
+                          "ref": "1.2.2",
+                          "schema": {
+                            "value": true
+                          }
+                        }
+                      }
+                    ],
+                    "elements": []
+                  }
+                ]
+              },
+              {
+                "id": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e.2",
+                "parentId": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e",
+                "type": "label",
+                "properties": {
+                  "value": "Số lượng tổ accu",
+                  "background": "#FFFFFF",
+                  "textColor": "#000000",
+                  "fontSize": "20",
+                  "fontWeight": "bold"
+                },
+                "rule": [],
+                "elements": []
+              },
+              {
+                "id": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e.3",
+                "parentId": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e",
+                "type": "text_number",
+                "label": "",
+                "properties": {
+                  "required": true,
+                  "readonly": false,
+                  "isDecimal": true,
+                  "minimum": 1,
+                  "maximum": 40,
+                  "multiline": false,
+                  "hint": "Xin mời nhập số liệu"
+                },
+                "rule": []
+              },
+              {
+                "id": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e.4",
+                "parentId": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e",
+                "type": "label",
+                "properties": {
+                  "value": "Chủng loại accu",
+                  "background": "#FFFFFF",
+                  "textColor": "#000000",
+                  "fontSize": "20",
+                  "fontWeight": "bold"
+                },
+                "rule": [],
+                "elements": []
+              },
+              {
+                "id": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e.5",
+                "parentId": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e",
+                "type": "option",
+                "properties": {
+                  "value": [],
+                  "enum": [
+                    {
+                      "key": "1",
+                      "title": "Option 1",
+                      "value": "1"
+                    },
+                    {
+                      "key": "2",
+                      "title": "Option 2",
+                      "value": "2"
+                    }
+                  ],
+                  "multiselect": false
+                },
+                "rule": [],
+                "elements": []
+              },
+              {
+                "id": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e.6",
+                "parentId": "432ad4b9-ab5c-4715-bb83-37e6ba9c150e",
+                "type": "button",
+                "properties": {
+                  "textButton": "Tiếp tục",
+                  "background": "#FFFFFF",
+                  "textColor": "#FFFFFF",
+                  "action": {
+                    "data": {},
+                    "name": "generate"
+                  }
+                }
+              }
+            ],
+            "requireImage": true,
+            "requireNote": true,
+            "minimum": null,
+            "maximum": null,
+            "isEdit": false
+          }
+        ],
+        "isEdit": false
+      }
+    ],
+    "isEdit": false,
+    "isEnable": true
+  }
+]

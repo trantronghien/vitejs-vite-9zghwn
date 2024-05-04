@@ -1,0 +1,175 @@
+[
+  {
+    "id": "e5f74174-5f9a-405d-a9a5-702f060154f7",
+    "step": "1",
+    "version": "1",
+    "type_job": "BTPOP",
+    "type_pop": "INDOOR",
+    "tool": "btcomp",
+    "jobType": "bt",
+    "type": "mpd",
+    "label": "bước 1",
+    "elements": [
+      {
+        "id": "a081bdb2-48a9-4efd-a3c7-f51f66743ccd",
+        "step": "1.1",
+        "version": "1",
+        "type_job": "BTPOP",
+        "type_pop": "INDOOR",
+        "label": "tiêu chí cha",
+        "elements": [
+          {
+            "id": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71",
+            "step": "1.1.1",
+            "version": "1",
+            "type_job": "BTPOP",
+            "type_pop": "INDOOR",
+            "layout": "vertical",
+            "optionType": "textNumRating",
+            "label": "tiêu chí con",
+            "elements": [
+              {
+                "id": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.1",
+                "parentId": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71",
+                "type": "label",
+                "properties": {
+                  "value": "Label của switch",
+                  "background": "#FFFFFF",
+                  "textColor": "#000000",
+                  "fontSize": "20",
+                  "fontWeight": "bold"
+                },
+                "rule": [],
+                "elements": []
+              },
+              {
+                "id": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.2",
+                "parentId": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71",
+                "type": "text_number",
+                "label": "",
+                "properties": {
+                  "required": false,
+                  "readonly": false,
+                  "isDecimal": true,
+                  "minimum": 0,
+                  "maximum": 10,
+                  "length": 300,
+                  "multiline": false,
+                  "hint": "Nhập điện áp"
+                },
+                "rule": []
+              },
+              {
+                "id": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.3",
+                "label": "",
+                "type": "group",
+                "layout": "horizontal",
+                "elements": [
+                  {
+                    "id": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.3.1",
+                    "parentId": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.3",
+                    "type": "text",
+                    "label": "Ghi chú",
+                    "properties": {
+                      "required": false,
+                      "value": "true",
+                      "readonly": false,
+                      "length": 300,
+                      "multiline": false,
+                      "hint": "Xin nhập ghi chú"
+                    },
+                    "rule": [
+                      {
+                        "action": "hide",
+                        "condition": {
+                          "ref": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.3.1",
+                          "schema": {
+                            "required": false
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.3.2",
+                    "parentId": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.3",
+                    "type": "image",
+                    "label": "Ảnh Bt",
+                    "properties": {
+                      "required": true,
+                      "length": 3,
+                      "description": "Cần chụp ảnh để",
+                      "minimum": 0
+                    },
+                    "rule": [
+                      {
+                        "action": "hide",
+                        "condition": {
+                          "ref": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.3.2",
+                          "schema": {
+                            "required": false
+                          }
+                        }
+                      }
+                    ],
+                    "elements": []
+                  }
+                ]
+              },
+              {
+                "id": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.4",
+                "label": "",
+                "type": "group",
+                "layout": "vertical",
+                "elements": [
+                  {
+                    "id": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.4.1",
+                    "parentId": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.4",
+                    "type": "label",
+                    "properties": {
+                      "value": "Ghi chú TPKT",
+                      "background": "#FFFFFF",
+                      "textColor": "#000000",
+                      "fontSize": "20",
+                      "fontWeight": "bold"
+                    },
+                    "rule": [],
+                    "elements": []
+                  },
+                  {
+                    "id": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.4.2",
+                    "parentId": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.4",
+                    "type": "text",
+                    "properties": {
+                      "readonly": true,
+                      "multiline": false
+                    },
+                    "rule": [
+                      {
+                        "action": "hide",
+                        "condition": {
+                          "ref": "c4a12a34-17cb-47d2-9db5-59f4c4a2ff71.4.2",
+                          "schema": {
+                            "value": ""
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "requireImage": true,
+            "requireNote": false,
+            "minimum": null,
+            "maximum": null,
+            "isEdit": false
+          }
+        ],
+        "isEdit": false
+      }
+    ],
+    "isEdit": false,
+    "isEnable": true
+  }
+]

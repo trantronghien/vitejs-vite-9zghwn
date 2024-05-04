@@ -1,0 +1,183 @@
+[
+  {
+    "id": "1665c28f-16d7-441d-87e9-ee61e079a149",
+    "step": "1",
+    "version": "1",
+    "type_job": "BTPOP",
+    "type_pop": "INDOOR",
+    "tool": "btcomp",
+    "jobType": "bt",
+    "type": "mpd",
+    "label": "a",
+    "elements": [
+      {
+        "id": "9b7412b9-3b5f-4486-81fb-4d9db6301272",
+        "step": "1.1",
+        "version": "1",
+        "type_job": "BTPOP",
+        "type_pop": "INDOOR",
+        "label": "b",
+        "elements": [
+          {
+            "id": "1cd4c804-f868-40df-901a-46f3ebcdf185",
+            "step": "1.1.1",
+            "version": "1",
+            "type_job": "BTPOP",
+            "type_pop": "INDOOR",
+            "layout": "vertical",
+            "optionType": "selectedOption",
+            "label": "c",
+            "elements": [
+              {
+                "id": "1cd4c804-f868-40df-901a-46f3ebcdf185.1",
+                "parentId": "1cd4c804-f868-40df-901a-46f3ebcdf185",
+                "type": "label",
+                "properties": {
+                  "value": "Tiêu chí selected",
+                  "background": "#FFFFFF",
+                  "textColor": "#000000",
+                  "fontSize": "20",
+                  "fontWeight": "bold"
+                },
+                "rule": [],
+                "elements": []
+              },
+              {
+                "id": "1cd4c804-f868-40df-901a-46f3ebcdf185.2",
+                "parentId": "1cd4c804-f868-40df-901a-46f3ebcdf185",
+                "type": "option",
+                "properties": {
+                  "value": [],
+                  "enum": [
+                    {
+                      "key": "1",
+                      "title": "Option 1",
+                      "value": "1"
+                    },
+                    {
+                      "key": "2",
+                      "title": "Option 2",
+                      "value": "2"
+                    }
+                  ],
+                  "multiselect": false
+                },
+                "rule": [],
+                "elements": []
+              },
+              {
+                "id": "1cd4c804-f868-40df-901a-46f3ebcdf185.3",
+                "parentId": "1cd4c804-f868-40df-901a-46f3ebcdf185",
+                "label": "",
+                "type": "group",
+                "layout": "horizontal",
+                "elements": [
+                  {
+                    "id": "1cd4c804-f868-40df-901a-46f3ebcdf185.3.1",
+                    "parentId": "1cd4c804-f868-40df-901a-46f3ebcdf185.3",
+                    "type": "image",
+                    "label": "Ảnh Bt",
+                    "properties": {
+                      "required": true,
+                      "length": 3,
+                      "description": "Cần chụp ảnh để",
+                      "minimum": 0
+                    },
+                    "rule": [
+                      {
+                        "action": "hide",
+                        "condition": {
+                          "ref": "1cd4c804-f868-40df-901a-46f3ebcdf185.3.1",
+                          "schema": {
+                            "required": false
+                          }
+                        }
+                      }
+                    ],
+                    "elements": []
+                  },
+                  {
+                    "id": "1cd4c804-f868-40df-901a-46f3ebcdf185.3.2",
+                    "parentId": "1cd4c804-f868-40df-901a-46f3ebcdf185.3",
+                    "type": "text",
+                    "label": "Ghi chú",
+                    "properties": {
+                      "required": false,
+                      "value": "true",
+                      "readonly": false,
+                      "length": 300,
+                      "multiline": false,
+                      "hint": "Xin nhập ghi chú"
+                    },
+                    "rule": [
+                      {
+                        "action": "hide",
+                        "condition": {
+                          "ref": "1cd4c804-f868-40df-901a-46f3ebcdf185.3.2",
+                          "schema": {
+                            "required": false
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "1cd4c804-f868-40df-901a-46f3ebcdf185.4",
+                "parentId": "1cd4c804-f868-40df-901a-46f3ebcdf185",
+                "label": "",
+                "type": "group",
+                "layout": "vertical",
+                "elements": [
+                  {
+                    "id": "1cd4c804-f868-40df-901a-46f3ebcdf185.4.1",
+                    "parentId": "1cd4c804-f868-40df-901a-46f3ebcdf185.4",
+                    "type": "label",
+                    "properties": {
+                      "value": "Ghi chú TPKT",
+                      "background": "#FFFFFF",
+                      "textColor": "#000000",
+                      "fontSize": "20",
+                      "fontWeight": "bold"
+                    },
+                    "rule": [],
+                    "elements": []
+                  },
+                  {
+                    "id": "1cd4c804-f868-40df-901a-46f3ebcdf185.4.2",
+                    "parentId": "1cd4c804-f868-40df-901a-46f3ebcdf185.4",
+                    "type": "text",
+                    "properties": {
+                      "readonly": true,
+                      "multiline": false
+                    },
+                    "rule": [
+                      {
+                        "action": "hide",
+                        "condition": {
+                          "ref": "1.4.2",
+                          "schema": {
+                            "value": ""
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "requireImage": true,
+            "requireNote": false,
+            "minimum": null,
+            "maximum": null,
+            "isEdit": false
+          }
+        ],
+        "isEdit": false
+      }
+    ],
+    "isEdit": false,
+    "isEnable": true
+  }
+]

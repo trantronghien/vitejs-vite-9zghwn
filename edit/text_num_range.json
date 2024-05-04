@@ -1,0 +1,184 @@
+{
+  "id": "#childID.1",
+  "type": "group",
+  "label": "Tiêu đề của tiêu chí",
+  "optionType": "numberRating", //Loại tiêu chí (Text, Number, Number range, có/ không, ok/nok, Dữ liệu từ inventory...)
+  "layout": "vertical",
+  "elements": [
+    {
+      "id": "#childID.1.1",
+      "type": "group",
+      "layout": "horizontal",
+      "elements": [
+        {
+          "id": "#childID.1.1.1",
+          "parentId": "#childID.1.1",
+          "type": "label",
+          "properties": {
+            "value": "#options.value",
+            "fontSize": "14",
+            "fontWeight": "normal" // normal
+          },
+          "rule": [],
+          "elements": []
+        },
+        {
+          "id": "#childID.1.1.2",
+          "type": "switch",
+          "parentId": "#childID.1.1",
+          "properties": {
+            "value": false,
+            "readonly": true,
+            "offLabel": "Not Ok",
+            "onLabel": "Ok"
+          },
+          "rule": [
+            // switch ok không cần nhập ghi chú và hình ảnh
+            {
+              "action": "hide",
+              "condition": {
+                "ref": "#childID.1.3.1",
+                "schema": {
+                  "value": true
+                }
+              }
+            },
+            {
+              "action": "hide",
+              "condition": {
+                "ref": "#childID.1.3.2",
+                "schema": {
+                  "value": true
+                }
+              }
+            }
+          ],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "#childID.1.2",
+      "parentId": "#childID.1",
+      "type": "text_number",
+      "label": "",
+      "properties": {
+        "required": "#options.required", // bắt buộc ghi chú
+        "readonly": false,
+        "isDecimal": true,
+        "length": 300,
+        "multiline": false,
+        "hint": "Nhập điện áp"
+      },
+      "rule": [
+        {
+          "action": "on",
+          "condition": {
+            "ref": "#childID.1.1.2",
+            "schema": {
+              "minimum": "#options.minimum",
+              "maximum": "#options.maximum"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "#childID.1.3",
+      "label": "",
+      "type": "group",
+      "layout": "horizontal",
+      "elements": [
+        {
+          "id": "#childID.1.3.1",
+          "parentId": "#childID.1.3",
+          "type": "text",
+          "label": "Ghi chú",
+          "properties": {
+            "required": "#options.required", // bắt buộc ghi chú
+            "value": "false",
+            "readonly": true,
+            "length": 300,
+            "multiline": false,
+            "hint": "Xin nhập ghi chú"
+          },
+          "rule": [
+            {
+              "action": "hide",
+              "condition": {
+                "ref": "#childID.1.3.1",
+                "schema": {
+                  "required": false
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "#childID.1.3.2",
+          "parentId": "#childID.1.3",
+          "type": "image",
+          "label": "Ảnh Bt",
+          "properties": {
+            "readonly": false,
+            "required": "#options.required", // bắt buộc có ảnh
+            "description": "Cần chụp ảnh để",
+            "minimum": 0
+          },
+          "rule": [
+            {
+              "action": "hide",
+              "condition": {
+                "ref": "#childID.1.3.2",
+                "schema": {
+                  "required": false
+                }
+              }
+            }
+          ],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "#childID.1.4",
+      "label": "",
+      "type": "group",
+      "layout": "vertical",
+      "elements": [
+        {
+          "id": "#childID.1.4.1",
+          "parentId": "#childID.1.4",
+          "type": "label",
+          "properties": {
+            "value": "Ghi chú TPKT",
+            "fontSize": "14",
+            "fontWeight": "normal" // normal
+          },
+          "rule": [],
+          "elements": []
+        },
+        {
+          "id": "#childID.1.4.2",
+          "parentId": "#childID.1.4",
+          "type": "text",
+          "properties": {
+            "readonly": true,
+            "multiline": false
+          },
+          "rule": [
+            {
+              "action": "hide",
+              "condition": {
+                "ref": "#childID.1.4",
+                "schema": {
+                  "value": ""
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "a4583426-c538-4d17-a0f7-8dd06759e085",
+    "step": "1",
+    "version": "1",
+    "type_job": "BTPOP",
+    "type_pop": "INDOOR",
+    "tool": "btcomp",
+    "jobType": "bt",
+    "type": "mpd",
+    "label": "bước 1",
+    "elements": [
+      {
+        "id": "93085093-acb8-4481-add2-36d89c1d3012",
+        "step": "1.1",
+        "version": "1",
+        "type_job": "BTPOP",
+        "type_pop": "INDOOR",
+        "label": "tiêu chí cha",
+        "elements": [
+          {
+            "id": "39e635ca-c821-4d56-9e04-cad5e84269c8",
+            "step": "1.1.1",
+            "version": "1",
+            "type_job": "BTPOP",
+            "type_pop": "INDOOR",
+            "layout": "vertical",
+            "optionType": "textAutoFill",
+            "label": "con",
+            "elements": [
+              {
+                "id": "39e635ca-c821-4d56-9e04-cad5e84269c8.1",
+                "parentId": "39e635ca-c821-4d56-9e04-cad5e84269c8",
+                "type": "text",
+                "label": "Nhân viên thực hiện",
+                "properties": {
+                  "autoFillBy": "email",
+                  "readonly": true
+                },
+                "rule": [],
+                "elements": []
+              },
+              {
+                "id": "39e635ca-c821-4d56-9e04-cad5e84269c8.2",
+                "parentId": "39e635ca-c821-4d56-9e04-cad5e84269c8",
+                "type": "text",
+                "label": "Ghi chú TPKT",
+                "properties": {
+                  "readonly": true,
+                  "multiline": false
+                },
+                "rule": [
+                  {
+                    "effect": "hide",
+                    "condition": {
+                      "ref": "7.4",
+                      "schema": {
+                        "value": ""
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "requireImage": false,
+            "requireNote": true,
+            "minimum": null,
+            "maximum": null,
+            "isEdit": false
+          }
+        ],
+        "isEdit": false
+      }
+    ],
+    "isEdit": false,
+    "isEnable": true
+  }
+]

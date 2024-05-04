@@ -1,0 +1,113 @@
+{
+  "optionType": "inventory",
+  "layout": "vertical",
+  "id": "#childID.1",
+  "label": "tiêu chí text invetory",
+  "type": "group",
+  "elements": [
+    {
+      "id": "#childID.1.1",
+      "type": "group",
+      "layout": "horizontal",
+      "elements": [
+        {
+          "elements": [],
+          "rule": [],
+          "id": "#childID.1.1.1",
+          "type": "label",
+          "parentId": "#childID.1.1",
+          "properties": {
+            "value": "#options.value",
+            "fontSize": "14",
+            "fontWeight": "normal" // normal
+          }
+        },
+        {
+          "id": "#childID.1.1.2",
+          "type": "button",
+          "parentId": "#childID.1.1",
+          "elements": [],
+          "rule": [],
+          "properties": {
+            "readonly": false,
+            "type": "icon",
+            "icon": "assets/images/general/reload.svg",
+            "action": [
+              {
+                "ref": "#childID.1.1.2",
+                "actionValue": {},
+                "actionName": "disable"
+              },
+              {
+                "ref": "#childID.1.2",
+                "actionValue": {
+                  "method": "GET",
+                  "params": {
+                    "typeDevice": "typeDevice",
+                    "keyMapping": "keyMapping",
+                    "deviceName": "deviceName"
+                  },
+                  "url": "#options.url"
+                },
+                "actionName": "update"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "#childID.1.2",
+      "type": "text",
+      "parentId": "#childID.1",
+      "elements": [],
+      "rule": [],
+      "properties": {
+        "readonly": true,
+        "value": "",
+        "required": true,
+        "textColor": "#795675"
+      }
+    },
+    {
+      "id": "#childID.1.3",
+      "label": "",
+      "type": "group",
+      "layout": "vertical",
+      "elements": [
+        {
+          "elements": [],
+          "rule": [],
+          "id": "#childID.1.3.1",
+          "type": "label",
+          "parentId": "#childID.1.3",
+          "properties": {
+            "fontSize": "14",
+            "value": "Ghi chú TPKT",
+            "fontWeight": "normal"
+          }
+        },
+        {
+          "id": "#childID.1.3.2",
+          "type": "text",
+          "parentId": "#childID.1.3",
+          "rule": [
+            {
+              "condition": {
+                "schema": {
+                  "value": ""
+                },
+                "ref": "#childID.1.3"
+              },
+              "action": "hide"
+            }
+          ],
+          "properties": {
+            "readonly": true,
+            "multiline": false
+          }
+        }
+      ]
+    }
+  ]
+}

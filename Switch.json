@@ -1,0 +1,172 @@
+[
+  {
+    "id": "810cdcf0-c161-4497-962a-0a195584f951",
+    "step": "1",
+    "version": "1",
+    "type_job": "BTPOP",
+    "type_pop": "INDOOR",
+    "tool": "btcomp",
+    "jobType": "bt",
+    "type": "mpd",
+    "label": "b1",
+    "elements": [
+      {
+        "id": "7114765b-8e06-40ee-8038-a4766e23f7cc",
+        "step": "1.1",
+        "version": "1",
+        "type_job": "BTPOP",
+        "type_pop": "INDOOR",
+        "label": "c1",
+        "elements": [
+          {
+            "id": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c",
+            "step": "1.1.1",
+            "version": "1",
+            "type_job": "BTPOP",
+            "type_pop": "INDOOR",
+            "layout": "vertical",
+            "optionType": "switch",
+            "label": "con",
+            "elements": [
+              {
+                "id": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.1",
+                "parentId": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c",
+                "type": "group",
+                "layout": "horizontal",
+                "elements": [
+                  {
+                    "id": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.1.1",
+                    "parentId": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.1",
+                    "type": "label",
+                    "properties": {
+                      "value": "Label của switch",
+                      "background": "#FFFFFF",
+                      "textColor": "#000000",
+                      "fontSize": "20",
+                      "fontWeight": "bold"
+                    },
+                    "rule": [],
+                    "elements": []
+                  },
+                  {
+                    "id": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.1.2",
+                    "type": "switch",
+                    "parentId": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.1",
+                    "label": "Kiểm tra cửa chính ...",
+                    "properties": {
+                      "value": false,
+                      "readonly": false,
+                      "offLabel": "Not Ok",
+                      "onLabel": "Ok"
+                    },
+                    "rule": [
+                      null,
+                      {
+                        "value": false,
+                        "action": "hide",
+                        "condition": {
+                          "ref": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.2.2",
+                          "schema": {
+                            "value": true
+                          }
+                        }
+                      }
+                    ],
+                    "elements": []
+                  }
+                ]
+              },
+              {
+                "id": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.2",
+                "parentId": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c",
+                "label": "",
+                "type": "group",
+                "layout": "horizontal",
+                "elements": [
+                  {
+                    "id": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.2.1",
+                    "parentId": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.2",
+                    "type": "text",
+                    "label": "Ghi chú",
+                    "properties": {
+                      "required": true,
+                      "value": "true",
+                      "readonly": false,
+                      "length": 300,
+                      "multiline": false,
+                      "hint": "Xin nhập ghi chú"
+                    },
+                    "rule": [
+                      {
+                        "action": "hide",
+                        "condition": {
+                          "ref": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.2.1",
+                          "schema": {
+                            "required": false
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.2.2",
+                    "parentId": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.2",
+                    "type": "image",
+                    "label": "Ảnh Bt",
+                    "properties": {
+                      "required": true,
+                      "length": 3,
+                      "description": "Cần chụp ảnh để",
+                      "minimum": 0
+                    },
+                    "rule": [
+                      {
+                        "action": "hide",
+                        "condition": {
+                          "ref": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.2.2",
+                          "schema": {
+                            "required": false
+                          }
+                        }
+                      }
+                    ],
+                    "elements": []
+                  }
+                ]
+              },
+              {
+                "id": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.3",
+                "parentId": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c",
+                "type": "text",
+                "label": "Ghi chú TPKT",
+                "properties": {
+                  "readonly": true,
+                  "multiline": false
+                },
+                "rule": [
+                  {
+                    "action": "hide",
+                    "condition": {
+                      "ref": "c0cb287c-16b8-4c2a-a9b3-0ade9acfa04c.3",
+                      "schema": {
+                        "value": ""
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "requireImage": true,
+            "requireNote": false,
+            "minimum": null,
+            "maximum": null,
+            "isEdit": false
+          }
+        ],
+        "isEdit": false
+      }
+    ],
+    "isEdit": false,
+    "isEnable": true
+  }
+]

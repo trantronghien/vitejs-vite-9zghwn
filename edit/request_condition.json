@@ -1,0 +1,203 @@
+{
+  "id": "#childID.1",
+  "type": "group",
+  "layout": "vertical",
+  "optionType": "requestCondition",
+  "elements": [
+      {
+          "id": "#childID.1.1",
+          "parentId": "#childID.1",
+          "type": "group",
+          "layout": "horizontal",
+          "elements": [
+              {
+                  "id": "#childID.1.1.1",
+                  "type": "label",
+                  "parentId": "#childID.1.1",
+                  "elements": [],
+                  "rule": [],
+                  "properties": {
+                      "value": "#options.value",
+                      "fontSize": "14",
+                      "fontWeight": "normal" // normal
+                  }
+              },
+              {
+                  "id": "#childID.1.1.2",
+                  "type": "button",
+                  "parentId": "#childID.1.1",
+                  "elements": [],
+                  "rule": [
+                      {
+                          "condition": {
+                              "schema": {
+                                  "required": false
+                              },
+                              "ref": "#childID.1.2"
+                          },
+                          "action": "hide"
+                      }
+                  ],
+                  "properties": {
+                      "readonly": false,
+                      "type": "icon",
+                      "icon": "assets/images/general/reload.svg",
+                      "action": [
+                          {
+                              "ref": "#childID.1.1.2",
+                              "actionValue": {},
+                              "actionName": "disable"
+                          },
+                          {
+                              "ref": "#childID.1.2",
+                              "actionValue": {
+                                  "url": "#options.url",
+                                  "method": "GET",
+                                  "params": {
+                                      "timeQuery": 120,
+                                      "timeCompare": 10,
+                                      "typeDevice": "123"
+                                  }
+                              },
+                              "actionName": "update"
+                          }
+                      ]
+                  }
+              }
+          ],
+          "rule": []
+      },
+      {
+          "elements": [],
+          "id": "#childID.1.2",
+          "parentId": "#childID.1",
+          "type": "results",
+          "properties": {
+              "value": null,
+              "onLabel": "Not Ok",
+              "offLabel": "Ok",
+              "messageNoData": "Hiện tại không có kết quả nào",
+              "fontSize": "14",
+              "fontWeight": "normal"
+          },
+          "rule": [
+              {
+                  "action": "hide",
+                  "condition": {
+                      "ref": "#childID.1.2",
+                      "schema": {
+                          "value": null
+                      }
+                  }
+              },
+              {
+                  "action": "hide",
+                  "condition": {
+                      "ref": "#childID.1.3",
+                      "schema": {
+                          "value": []
+                      }
+                  }
+              },
+              {
+                  "action": "hide",
+                  "condition": {
+                      "ref": "#childID.1.4",
+                      "schema": {
+                          "value": []
+                      }
+                  }
+              }
+          ]
+      },
+      {
+          "id": "#childID.1.3",
+          "label": "Ghi chú",
+          "type": "text",
+          "parentId": "#childID.1",
+          "rule": [
+              {
+                  "condition": {
+                      "schema": {
+                          "required": false
+                      },
+                      "ref": "#childID.1.3"
+                  },
+                  "action": "hide"
+              }
+          ],
+          "properties": {
+              "required": "#options.required" // bắt buộc ghi chú
+"readonly": false,
+              "multiline": false,
+              "hint": "Xin nhập ghi chú",
+              "length": 300,
+              "value": ""
+          }
+      },
+      {
+          "id": "#childID.1.4",
+          "label": "Ảnh Bt",
+          "type": "image",
+          "parentId": "#childID.1",
+          "elements": [],
+          "rule": [
+              {
+                  "condition": {
+                      "schema": {
+                          "required": false
+                      },
+                      "ref": "#childID.1.4"
+                  },
+                  "action": "hide"
+              }
+          ],
+          "properties": {
+              "required": "#options.required" // bắt buộc hình ảnh
+"readonly": false,
+              "description": "Cần chụp ảnh để",
+              "minimum": 0
+          }
+      },
+      {
+          "id": "#childID.1.5",
+          "label": "",
+          "type": "group",
+          "layout": "vertical",
+          "elements": [
+              {
+                  "id": "#childID.1.5.1",
+                  "parentId": "#childID.1.5",
+                  "type": "label",
+                  "properties": {
+                      "value": "Ghi chú TPKT",
+                      "fontSize": "20",
+                      "fontWeight": "bold"
+                  },
+                  "rule": [],
+                  "elements": []
+              },
+              {
+                  "id": "#childID.1.5.2",
+                  "parentId": "#childID.1.5",
+                  "type": "text",
+                  "properties": {
+                      "readonly": true,
+                      "multiline": false
+                  },
+                  "rule": [
+                      {
+                          "action": "hide",
+                          "condition": {
+                              "ref": "#childID.1.5",
+                              "schema": {
+                                  "value": ""
+                              }
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  ]
+}
