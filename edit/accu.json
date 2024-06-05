@@ -1,430 +1,439 @@
 {
-  "id": "#childID.1",
-  "type": "group",
-  "layout": "vertical",
-  "elements": [
-    {
-      "id": "#childID.1.1",
-      "type": "group",
-      "properties": {
-        "background": "#FFF3E9"
-      },
-      "layout": "horizontal",
-      "elements": [
+  /// thư nghiểm
+    "id": "#childID.1",
+    "type": "group",
+    "layout": "vertical",
+    "elements": [
         {
-          "elements": [],
-          "rule": [],
-          "id": "#childID.1.1.1",
-          "type": "label",
-          "parentId": "#childID.1.1",
-          "properties": {
-            "fontSize": "16",
-            "value": "Thông tin chung",
-            "textColor": "#795675",
-            "fontWeight": "bold"
-          }
-        },
-        {
-          "elements": [],
-          "rule": [],
-          "id": "#childID.1.1.2",
-          "type": "button",
-          "parentId": "#childID.1.1",
-          "properties": {
-            "readonly": false,
-            "icon": "assets/images/general/arrow_no_tail_down.svg",
-            "action": [
-              {
-                "ref": "#childID.1.2",
-                "actionValue": {},
-                "actionName": "hide"
-              }
-            ],
-            "type": "icon"
-          }
-        }
-      ]
-    },
-    {
-      "id": "#childID.1.2",
-      "layout": "vertical",
-      "type": "group",
-      "elements": [
-        {
-          "id": "#childID.1.2.1",
-          "parentId": "#childID.1.2",
-          "type": "group",
-          "layout": "horizontal",
-          "elements": [
-            {
-              "elements": [],
-              "rule": [],
-              "id": "#childID.1.2.1.1",
-              "type": "label",
-              "parentId": "#childID.1.2.1",
-              "properties": {
-                "fontSize": "14",
-                "value": "Thực hiện đo kiểm accu",
-                "textColor": "#795675",
-                "fontWeight": "normal"
-              }
+            "id": "#childID.1.1",
+            "type": "group",
+            "properties": {
+                "background": "#FFF3E9"
             },
-            {
-              "id": "#childID.1.2.1.2",
-              "type": "switch",
-              "parentId": "#childID.1.2.1",
-              "properties": {
-                "value": true,
-                "readonly": false,
-                "onLabel": "Yes",
-                "offLabel": "No"
-              },
-              "elements": [],
-              "rule": [
+            "layout": "horizontal",
+            "elements": [
                 {
-                  "condition": {
-                    "schema": {
-                      "value": false
-                    },
-                    "ref": "#childID.1.2.2"
-                  },
-                  "action": "hide"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "#childID.1.2.2",
-          "parentId": "#childID.1.2",
-          "type": "group",
-          "layout": "vertical",
-          "elements": [
-            {
-              "id": "#childID.1.2.2.1",
-              "type": "group",
-              "parentId": "#childID.1.2.2",
-              "layout": "vertical",
-              "elements": [
-                {
-                  "elements": [],
-                  "rule": [],
-                  "id": "#childID.1.2.2.1.2",
-                  "type": "label",
-                  "parentId": "#childID.1.2.2.1",
-                  "properties": {
-                    "fontSize": "14",
-                    "value": "Chủng loại Accu",
-                    "fontWeight": "normal"
-                  }
-                },
-                {
-                  "elements": [],
-                  "rule": [],
-                  "id": "#childID.1.2.2.1.2",
-                  "type": "option",
-                  "parentId": "#childID.1.2.2.1",
-                  "properties": {
-                    "value": [],
-                    "type": "option",
-                    "readonly": false,
-                    "multiselect": false,
-                    "enum": "#options.enum"
-                  }
-                }
-              ]
-            },
-            {
-              "elements": [],
-              "rule": [],
-              "id": "#childID.1.2.2.2",
-              "type": "label",
-              "parentId": "#childID.1.2.2",
-              "properties": {
-                "fontSize": "14",
-                "value": "Số lượng tổ Accu",
-                "fontWeight": "normal"
-              }
-            },
-            {
-              "id": "#childID.1.2.2.3",
-              "parentId": "#childID.1.2.2",
-              "type": "group",
-              "layout": "horizontal",
-              "elements": [
-                {
-                  "elements": [],
-                  "rule": [
-                    {
-                      "condition": {
-                        "schema": {},
-                        "ref": "#childID.1.2.2.3.2"
-                      },
-                      "action": "update"
+                    "elements": [],
+                    "rule": [],
+                    "id": "#childID.1.1.1",
+                    "type": "label",
+                    "parentId": "#childID.1.1",
+                    "properties": {
+                        "fontSize": "16",
+                        "value": "Thông tin chung",
+                        "textColor": "#795675",
+                        "fontWeight": "bold"
                     }
-                  ],
-                  "id": "#childID.1.2.2.3.1",
-                  "type": "text_number",
-                  "parentId": "#childID.1.2.2.3",
-                  "properties": {
-                    "exclusiveMaximum": "50",
-                    "readonly": false,
-                    "isDecimal": false,
-                    "minimum": "0"
-                  }
                 },
                 {
-                  "elements": [],
-                  "rule": [],
-                  "id": "#childID.1.2.2.3.2",
-                  "type": "button",
-                  "parentId": "#childID.1.2.2.3",
-                  "properties": {
-                    "readonly": false,
-                    "textButton": "Generate",
-                    "type": "icon",
-                    "icon": "assets/images/maintenance_pop_station_inf/ic_arrow_right.svg",
-                    "action": [
-                      {
-                        "ref": "#childID.1.2.2.4",
-                        "actionValue": {
-                          "id": "tempId",
-                          "type": "group",
-                          "optionType": "numberRating",
-                          "layout": "vertical",
-                          "elements": [
+                    "elements": [],
+                    "rule": [],
+                    "id": "#childID.1.1.2",
+                    "type": "button",
+                    "parentId": "#childID.1.1",
+                    "properties": {
+                        "readonly": false,
+                        "icon": "assets/images/general/arrow_no_tail_up.svg",
+                        "action": [
                             {
-                              "layout": "horizontal",
-                              "elements": [
-                                {
-                                  "elements": [],
-                                  "rule": [],
-                                  "id": "tempId.1.1",
-                                  "type": "label",
-                                  "parentId": "tempId.1",
-                                  "properties": {
-                                    "fontSize": "14",
-                                    "value": "#options.value", // "Nội trợ"
-                                    "fontWeight": "normal"
-                                  }
-                                },
-                                {
-                                  "elements": [],
-                                  "rule": [
-                                    {
-                                      "condition": {
-                                        "schema": {
-                                          "value": true
-                                        },
-                                        "ref": "tempId.3"
-                                      },
-                                      "action": "hide"
-                                    },
-                                    {
-                                      "condition": {
-                                        "schema": {
-                                          "value": true
-                                        },
-                                        "ref": "tempId.3"
-                                      },
-                                      "action": "hide"
-                                    }
-                                  ],
-                                  "id": "tempId.1.2",
-                                  "type": "switch",
-                                  "parentId": "tempId.1",
-                                  "properties": {
-                                    "onLabel": "Ok",
-                                    "readonly": false,
-                                    "value": false,
-                                    "offLabel": "Not Ok"
-                                  }
-                                }
-                              ],
-                              "id": "tempId.1",
-                              "type": "group"
-                            },
-                            {
-                              "rule": [
-                                {
-                                  "condition": {
-                                    "schema": {
-                                      "minimum": "1"
-                                    },
-                                    "ref": "tempId.1.2"
-                                  },
-                                  "action": "on"
-                                }
-                              ],
-                              "id": "tempId.2",
-                              "label": "",
-                              "type": "text_number",
-                              "parentId": "#childID.1.1",
-                              "properties": {
-                                "readonly": false,
-                                "multiline": false,
-                                "hint": "Xin nhập mời nhập số liệu",
-                                "length": 300,
-                                "isDecimal": true,
-                                "required": true
-                              }
-                            },
-                            {
-                              "layout": "horizontal",
-                              "elements": [
-                                {
-                                  "rule": [
-                                    {
-                                      "condition": {
-                                        "schema": {
-                                          "required": false
-                                        },
-                                        "ref": "tempId.3.1"
-                                      },
-                                      "action": "hide"
-                                    }
-                                  ],
-                                  "id": "tempId.3.1",
-                                  "label": "Ghi chú",
-                                  "type": "text",
-                                  "parentId": "tempId.3",
-                                  "properties": {
-                                    "readonly": false,
-                                    "multiline": false,
-                                    "hint": "Xin nhập ghi chú",
-                                    "length": 300,
-                                    "value": "true",
-                                    "required": true
-                                  }
-                                },
-                                {
-                                  "elements": [],
-                                  "rule": [
-                                    {
-                                      "condition": {
-                                        "schema": {
-                                          "required": false
-                                        },
-                                        "ref": "tempId.3.2"
-                                      },
-                                      "action": "hide"
-                                    }
-                                  ],
-                                  "id": "tempId.3.2",
-                                  "label": "Ảnh Bt",
-                                  "type": "image",
-                                  "parentId": "tempId.3",
-                                  "properties": {
-                                    "length": 3,
-                                    "description": "Cần chụp ảnh để",
-                                    "minimum": 0,
-                                    "required": true
-                                  }
-                                }
-                              ],
-                              "id": "tempId.3",
-                              "label": "",
-                              "type": "group"
-                            },
-                            {
-                              "layout": "vertical",
-                              "elements": [
-                                {
-                                  "elements": [],
-                                  "rule": [],
-                                  "id": "tempId.4.1",
-                                  "type": "label",
-                                  "parentId": "tempId.4",
-                                  "properties": {
-                                    "fontSize": "14",
-                                    "value": "#options.value", // "Điện áp",
-                                    "fontWeight": "normal"
-                                  }
-                                },
-                                {
-                                  "rule": [],
-                                  "id": "tempId.4.2",
-                                  "type": "text_number",
-                                  "parentId": "tempId.4",
-                                  "properties": {
-                                    "readonly": false,
-                                    "multiline": false,
-                                    "hint": "Xin nhập mời nhập số liệu"
-                                  }
-                                }
-                              ],
-                              "id": "tempId.4",
-                              "label": "",
-                              "type": "group"
-                            },
-                            {
-                              "layout": "vertical",
-                              "elements": [
-                                {
-                                  "elements": [],
-                                  "rule": [],
-                                  "id": "tempId.5.1",
-                                  "type": "label",
-                                  "parentId": "tempId.5",
-                                  "properties": {
-                                    "fontSize": "14",
-                                    "value": "#options.value", //  "Ngày đưa vào sử dụng",
-                                    "fontWeight": "normal"
-                                  }
-                                },
-                                {
-                                  "rule": [],
-                                  "id": "tempId.5.2",
-                                  "type": "date",
-                                  "parentId": "tempId.5",
-                                  "properties": {
-                                    "format": "mm/yyyy",
-                                    "from": "",
-                                    "to": "",
-                                    "value": ""
-                                  }
-                                }
-                              ],
-                              "id": "tempId.5",
-                              "label": "",
-                              "type": "group"
-                            },
-                            {
-                              "id": "tempId.6",
-                              "parentId": "tempId",
-                              "type": "group",
-                              "elements": [],
-                              "properties": {
-                                "borderColor": "#4b4b4b"
-                              },
-                              "rule": [
-                                {
-                                  "condition": {
-                                    "schema": {},
-                                    "ref": "tempId.6"
-                                  },
-                                  "action": "warning"
-                                }
-                              ]
+                                "ref": "#childID.1.2",
+                                "actionValue": {},
+                                "actionName": "hide"
                             }
-                          ]
-                        },
-                        "actionName": "generateAccu"
-                      }
-                    ]
-                  }
+                        ],
+                        "type": "icon"
+                    }
                 }
-              ]
-            }
-          ]
+            ]
         },
         {
-          "layout": "vertical",
-          "elements": [],
-          "id": "#childID.1.2.2.4",
-          "type": "groupAccu"
+            "id": "#childID.1.2",
+            "layout": "vertical",
+            "type": "group",
+            "elements": [
+                {
+                    "id": "#childID.1.2.1",
+                    "parentId": "#childID.1.2",
+                    "type": "group",
+                    "layout": "horizontal",
+                    "elements": [
+                        {
+                            "elements": [],
+                            "rule": [],
+                            "id": "#childID.1.2.1.1",
+                            "type": "label",
+                            "parentId": "#childID.1.2.1",
+                            "properties": {
+                                "fontSize": "14",
+                                "value": "Thực hiện đo kiểm accu",
+                                "textColor": "#795675",
+                                "fontWeight": "normal"
+                            }
+                        },
+                        {
+                            "id": "#childID.1.2.1.2",
+                            "type": "switch",
+                            "parentId": "#childID.1.2.1",
+                            "properties": {
+                                "value": true,
+                                "readonly": false,
+                                "onLabel": "Yes",
+                                "offLabel": "No"
+                            },
+                            "elements": [],
+                            "rule": [
+                                {
+                                    "condition": {
+                                        "schema": {
+                                            "value": false
+                                        },
+                                        "ref": "#childID.1.2.2"
+                                    },
+                                    "action": "hide"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "#childID.1.2.2",
+                    "parentId": "#childID.1.2",
+                    "type": "group",
+                    "layout": "vertical",
+                    "elements": [
+                        {
+                            "id": "#childID.1.2.2.1",
+                            "type": "group",
+                            "parentId": "#childID.1.2.2",
+                            "layout": "vertical",
+                            "elements": [
+                                {
+                                    "elements": [],
+                                    "rule": [],
+                                    "id": "#childID.1.2.2.1.2",
+                                    "type": "label",
+                                    "parentId": "#childID.1.2.2.1",
+                                    "properties": {
+                                        "fontSize": "14",
+                                        "value": "Chủng loại Accu",
+                                        "fontWeight": "normal"
+                                    }
+                                },
+                                {
+                                    "id": "#childID.1.2.2.1.2",
+                                    "type": "option",
+                                    "parentId": "#childID.1.2.2.1",
+                                    "properties": {
+                                        "value": [],
+                                        "type": "option",
+                                        "readonly": false,
+                                        "multiselect": false,
+                                        "enum": "#options.enum"
+                                    },
+                                    "elements": [],
+                                    "rule": [
+                                        /// update rule 
+                                        {
+                                            "condition": {
+                                                "schema": {},
+                                                "ref": "#childID.1.2.2.3.2"
+                                            },
+                                            "action": "notifyActiveRule"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "elements": [],
+                            "rule": [],
+                            "id": "#childID.1.2.2.2",
+                            "type": "label",
+                            "parentId": "#childID.1.2.2",
+                            "properties": {
+                                "fontSize": "14",
+                                "value": "Số lượng tổ Accu",
+                                "fontWeight": "normal"
+                            }
+                        },
+                        {
+                            "id": "#childID.1.2.2.3",
+                            "parentId": "#childID.1.2.2",
+                            "type": "group",
+                            "layout": "horizontal",
+                            "elements": [
+                                {
+                                    "elements": [],
+                                    "rule": [],
+                                    "id": "#childID.1.2.2.3.1",
+                                    "type": "text_number",
+                                    "parentId": "#childID.1.2.2.3",
+                                    "properties": {
+                                        "maximum": "50",
+                                        "readonly": false,
+                                        "isDecimal": false,
+                                        "minimum": "0"
+                                    }
+                                },
+                                {
+                                    "elements": [],
+                                    "rule": [],
+                                    "id": "#childID.1.2.2.3.2",
+                                    "type": "button",
+                                    "parentId": "#childID.1.2.2.3",
+                                    "properties": {
+                                        "readonly": false,
+                                        "textButton": "Generate",
+                                        "type": "icon",
+                                        "icon": "assets/images/maintenance_pop_station_inf/ic_arrow_right.svg",
+                                        "action": [
+                                            {
+                                                "getFrom": {
+                                                    "id": "#childID.1.2.2.3.1",
+                                                    "fields": [
+                                                        "value"
+                                                    ]
+                                                },
+                                                "ref": "#childID.1.2.2.4",
+                                                "actionValue": {
+                                                    "id": "tempId",
+                                                    "type": "group",
+                                                    "optionType": "numberRating",
+                                                    "layout": "vertical",
+                                                    "elements": [
+                                                        {
+                                                            "layout": "horizontal",
+                                                            "elements": [
+                                                                {
+                                                                    "elements": [],
+                                                                    "rule": [],
+                                                                    "id": "tempId.1.1",
+                                                                    "type": "label",
+                                                                    "parentId": "tempId.1",
+                                                                    "properties": {
+                                                                        "fontSize": "14",
+                                                                        "value": "#options.value", // "Nội trợ"
+                                                                        "fontWeight": "normal"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "elements": [],
+                                                                    "rule": [
+                                                                        {
+                                                                            "condition": {
+                                                                                "schema": {
+                                                                                    "value": true
+                                                                                },
+                                                                                "ref": "tempId.3"
+                                                                            },
+                                                                            "action": "hide"
+                                                                        },
+                                                                        {
+                                                                            "condition": {
+                                                                                "schema": {
+                                                                                    "value": true
+                                                                                },
+                                                                                "ref": "tempId.3"
+                                                                            },
+                                                                            "action": "hide"
+                                                                        }
+                                                                    ],
+                                                                    "id": "tempId.1.2",
+                                                                    "type": "switch",
+                                                                    "parentId": "tempId.1",
+                                                                    "properties": {
+                                                                        "onLabel": "Ok",
+                                                                        "readonly": false,
+                                                                        "value": false,
+                                                                        "offLabel": "Not Ok"
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "id": "tempId.1",
+                                                            "type": "group"
+                                                        },
+                                                        {
+                                                            "rule": [
+                                                                {
+                                                                    "condition": {
+                                                                        "schema": {
+                                                                            "minimum": "optionValue"
+                                                                        },
+                                                                        "ref": "tempId.1.2"
+                                                                    },
+                                                                    "action": "on"
+                                                                }
+                                                            ],
+                                                            "id": "tempId.2",
+                                                            "label": "",
+                                                            "type": "text_number",
+                                                            "parentId": "#childID.1.1",
+                                                            "properties": {
+                                                                "readonly": false,
+                                                                "multiline": false,
+                                                                "hint": "Xin nhập mời nhập số liệu",
+                                                                "length": 300,
+                                                                "isDecimal": true,
+                                                                "required": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "layout": "horizontal",
+                                                            "elements": [
+                                                                {
+                                                                    "rule": [
+                                                                        {
+                                                                            "condition": {
+                                                                                "schema": {
+                                                                                    "required": false
+                                                                                },
+                                                                                "ref": "tempId.3.1"
+                                                                            },
+                                                                            "action": "hide"
+                                                                        }
+                                                                    ],
+                                                                    "id": "tempId.3.1",
+                                                                    "label": "Ghi chú",
+                                                                    "type": "text",
+                                                                    "parentId": "tempId.3",
+                                                                    "properties": {
+                                                                        "readonly": false,
+                                                                        "multiline": false,
+                                                                        "hint": "Xin nhập ghi chú",
+                                                                        "length": 300,
+                                                                        "value": "",
+                                                                        "required": true
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "elements": [],
+                                                                    "rule": [
+                                                                        {
+                                                                            "condition": {
+                                                                                "schema": {
+                                                                                    "required": false
+                                                                                },
+                                                                                "ref": "tempId.3.2"
+                                                                            },
+                                                                            "action": "hide"
+                                                                        }
+                                                                    ],
+                                                                    "id": "tempId.3.2",
+                                                                    "label": "Ảnh Bt",
+                                                                    "type": "image",
+                                                                    "parentId": "tempId.3",
+                                                                    "properties": {
+                                                                        "length": 3,
+                                                                        "description": "Cần chụp ảnh để",
+                                                                        "minimum": 0,
+                                                                        "required": true
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "id": "tempId.3",
+                                                            "label": "",
+                                                            "type": "group"
+                                                        },
+                                                        {
+                                                            "layout": "vertical",
+                                                            "elements": [
+                                                                {
+                                                                    "elements": [],
+                                                                    "rule": [],
+                                                                    "id": "tempId.4.1",
+                                                                    "type": "label",
+                                                                    "parentId": "tempId.4",
+                                                                    "properties": {
+                                                                        "fontSize": "14",
+                                                                        "value": "#options.value", // "Điện áp",
+                                                                        "fontWeight": "normal"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "rule": [],
+                                                                    "id": "tempId.4.2",
+                                                                    "type": "text_number",
+                                                                    "parentId": "tempId.4",
+                                                                    "properties": {
+                                                                        "readonly": false,
+                                                                        "multiline": false,
+                                                                        "hint": "Xin nhập mời nhập số liệu"
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "id": "tempId.4",
+                                                            "label": "",
+                                                            "type": "group"
+                                                        },
+                                                        {
+                                                            "layout": "vertical",
+                                                            "elements": [
+                                                                {
+                                                                    "elements": [],
+                                                                    "rule": [],
+                                                                    "id": "tempId.5.1",
+                                                                    "type": "label",
+                                                                    "parentId": "tempId.5",
+                                                                    "properties": {
+                                                                        "fontSize": "14",
+                                                                        "value": "#options.value", //  "Ngày đưa vào sử dụng",
+                                                                        "fontWeight": "normal"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "rule": [],
+                                                                    "id": "tempId.5.2",
+                                                                    "type": "date",
+                                                                    "parentId": "tempId.5",
+                                                                    "properties": {
+                                                                        "format": "mm/yyyy",
+                                                                        "from": "",
+                                                                        "to": "",
+                                                                        "value": ""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "id": "tempId.5",
+                                                            "label": "",
+                                                            "type": "group"
+                                                        },
+                                                        {
+                                                            "id": "tempId.6",
+                                                            "parentId": "tempId",
+                                                            "type": "group",
+                                                            "elements": [],
+                                                            "properties": {
+                                                                "borderColor": "#4b4b4b"
+                                                            },
+                                                            "rule": [
+                                                                {
+                                                                    "condition": {
+                                                                        "schema": {},
+                                                                        "ref": "tempId.6"
+                                                                    },
+                                                                    "action": "warning"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                "actionName": "generateAccu"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "layout": "vertical",
+                            "elements": [],
+                            "id": "#childID.1.2.2.4",
+                            "parentId": "#childID.1.2.2",
+                            "type": "groupAccu"
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
