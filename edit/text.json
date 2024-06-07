@@ -43,7 +43,7 @@
           "type": "image",
           "label": "Ảnh Bt",
           "properties": {
-            "required": "#options.required", // bắt buộc có ảnh
+            "required": "#options.isRequireImage", // bắt buộc có ảnh
             "length": 3,
             "description": "Cần chụp ảnh để",
             "minimum": 0
