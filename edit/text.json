@@ -86,7 +86,7 @@
           "parentId": "#childID.1.3",
           "type": "text",
           "properties": {
-            "required": "#options.required", // bắt buộc ghi chú
+            "required": "#options.isRequireNote", // bắt buộc ghi chú
             "value": "",
             "readonly": false,
             "length": 300,

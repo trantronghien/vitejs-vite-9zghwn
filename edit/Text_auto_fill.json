@@ -39,7 +39,7 @@
           "type": "image",
           "label": "Ảnh Bt",
           "properties": {
-            "required": "#options.required", // bắt buộc có ảnh
+            "required": "#options.isRequireImage", // bắt buộc có ảnh
             "length": 3,
             "description": "Cần chụp ảnh để",
             "minimum": 0
@@ -82,7 +82,7 @@
           "parentId": "#childID.1.3",
           "type": "text",
           "properties": {
-            "required": "#options.required", // bắt buộc ghi chú
+            "required": "#options.isRequireNote", // bắt buộc ghi chú
             "value": "true",
             "readonly": false,
             "length": 300,

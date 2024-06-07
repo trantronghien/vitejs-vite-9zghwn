@@ -128,7 +128,7 @@
                                         "type": "option",
                                         "readonly": false,
                                         "multiselect": false,
-                                        "enum": "#options.enum"
+                                        "enum": "#options.accuEnum"
                                     },
                                     "elements": [],
                                     "rule": [

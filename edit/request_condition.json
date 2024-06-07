@@ -127,7 +127,7 @@
               }
           ],
           "properties": {
-              "required": "#options.required" // bắt buộc ghi chú
+              "required": "#options.isRequireNote" // bắt buộc ghi chú
 "readonly": false,
               "multiline": false,
               "hint": "Xin nhập ghi chú",
