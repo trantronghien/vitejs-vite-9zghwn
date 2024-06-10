@@ -15,7 +15,7 @@
           "parentId": "#childID.1.1",
           "type": "label",
           "properties": {
-            "value": "#options.value",
+            "value": "#options.label",
             "fontSize": "14",
             "fontWeight": "normal" // normal
           },

@@ -9,7 +9,7 @@
       "parentId": "#childID.1",
       "type": "label",
       "properties": {
-        "value": "#options.value",
+        "value": "#options.label",
         "fontSize": "14",
         "fontWeight": "normal" // normal
       },
@@ -22,7 +22,7 @@
       "type": "option",
       "properties": {
         "readonly": false,
-        "value": "#options.value", // tùy chọn mặc định
+        "value": "#options.enum[0]", // tùy chọn mặc định
         "enum": "#options.enum",
         "multiselect": false
       },

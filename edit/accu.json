@@ -212,7 +212,7 @@
                                                                     "parentId": "tempId.1",
                                                                     "properties": {
                                                                         "fontSize": "14",
-                                                                        "value": "#options.value", // "Nội trợ"
+                                                                        "value": "#options.InternalResistance", // "Nội trợ"
                                                                         "fontWeight": "normal"
                                                                     }
                                                                 },
@@ -345,7 +345,7 @@
                                                                     "parentId": "tempId.4",
                                                                     "properties": {
                                                                         "fontSize": "14",
-                                                                        "value": "#options.value", // "Điện áp",
+                                                                        "value": "#options.VoltageLevel", // "Điện áp",
                                                                         "fontWeight": "normal"
                                                                     }
                                                                 },
@@ -376,7 +376,7 @@
                                                                     "parentId": "tempId.5",
                                                                     "properties": {
                                                                         "fontSize": "14",
-                                                                        "value": "#options.value", //  "Ngày đưa vào sử dụng",
+                                                                        "value": "#options.UsageDate", //  "Ngày đưa vào sử dụng",
                                                                         "fontWeight": "normal"
                                                                     }
                                                                 },
