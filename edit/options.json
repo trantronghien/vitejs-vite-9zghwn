@@ -22,8 +22,8 @@
       "type": "option",
       "properties": {
         "readonly": false,
-        "value": "#options.selectOptionTypeEnum[0]", // tùy chọn mặc định
-        "enum": "#options.selectOptionTypeEnum",
+        "value": "#options.selectEnum[0]", // tùy chọn mặc định
+        "enum": "#options.selectEnum",
         "multiselect": false
       },
       "rule": [],
