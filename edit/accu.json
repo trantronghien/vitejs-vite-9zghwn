@@ -391,8 +391,10 @@
                                   "parentId": "tempId.tempGroupId.tempAccuId.2.5",
                                   "properties": {
                                     "readonly": false,
-                                    "format": "mm/yyyy",
-                                    "value": ""
+                                    "format": "MM/yyyy",
+                                    "value": "",
+                                    "from": 0,
+                                    "to": 365
                                   }
                                 }
                               ],
