@@ -42,6 +42,20 @@
                 "ref": "#childID.1.2"
               },
               "action": "hide"
+            },
+            {
+              "condition": {
+                "schema": {"value": false},
+                "ref": "#childID.1.2.*"
+              },
+              "action": "notifyDetachElement"
+            },
+            {
+              "condition": {
+                "schema": {"value": true},
+                "ref": "#childID.1.2.*"
+              },
+              "action": "notifyAttachElement"
             }
           ]
         }
