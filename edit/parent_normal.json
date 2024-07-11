@@ -1,0 +1,87 @@
+{
+    "type": "group",
+    "layout": "vertical",
+    "label": "Tiêu chí cha",
+    "id": "#childID.1",
+    "elements": [
+        // thông tin tiêu chí cha
+        {
+            "id": "#childID.1.1",
+            "type": "group",
+            "optionType": "group",
+            "layout": "horizontal",
+            "properties": { // thuộc tính group của tiêu chí cha
+                "background": "#FFF3E9"
+            },
+            "elements": [
+                {
+                    "id": "#childID.1.1.1",
+                    "parentId": "#childID.1.1",
+                    "type": "label",
+                    "properties": {
+                        "value": "Tiêu chí cha", // tiêu đề của tiêu chí cha
+                        "fontSize": "16",
+                        "fontWeight": "bold"
+                    },
+                    "rule": [],
+                    "elements": []
+                },
+                {
+                    "id": "#childID.1.1.2",
+                    "type": "button",
+                    "parentId": "#childID.1.1",
+                    "properties": {
+                        "readonly": false,
+                        "type": "icon",
+                        "icon": "assets/images/general/arrow_no_tail_up.svg",
+                        "action": [
+                            {
+                                "actionName": "hide", // check if hide thì show, ngược lại
+                                "ref": "#childID.1.2",
+                                "actionValue": {}
+                            },
+                            {
+                                "actionName": "updateUI",
+                                "ref": "#childID.1.1.2",
+                                "actionValue": {
+                                    "down": "assets/images/general/arrow_no_tail_down.svg",
+                                    "up": "assets/images/general/arrow_no_tail_up.svg"
+                                }
+                            }
+                        ]
+                    },
+                    "rule": [],
+                    "elements": []
+                } 
+            ]
+        },
+        {
+            "id": "#childID.1.2", // cần map
+            "parentId": "#childID.1",
+            "type": "group",
+            "layout": "vertical",
+            "elements": [
+                // tiêu chí con 1
+                {
+                    "id": "2",
+                    "label": "Tiêu chí con 1",
+                    "type": "group",
+                    "optionType": "<code loại tiêu chí>", //Loại tiêu chí (Text, Number, Number range, có/ không, ok/nok, Dữ liệu từ inventory...)
+                    "elements": [
+                        //elements tương ứng loại tiêu chí
+                    ]
+                },
+                // tiêu chí con 2
+                {
+                    "id": "2",
+                    "label": "Tiêu chí con 2",
+                    "type": "group",
+                    "optionType": "<code loại tiêu chí>", //Loại tiêu chí (Text, Number, Number range, có/ không, ok/nok, Dữ liệu từ inventory...)
+                    "elements": [
+                        //elements tương ứng loại tiêu chí
+                    ]
+                }
+            ]
+        }
+    ]
+}

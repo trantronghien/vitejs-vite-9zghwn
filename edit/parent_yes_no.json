@@ -6,27 +6,27 @@
     "elements": [
         // thông tin tiêu chí cha
         {
-            "id": "#childID.1.1",
-            "type": "group",
-            "optionType": "group",
-            "layout": "horizontal",
-            "properties": { // thuộc tính group của tiêu chí cha
-                "background": "#FFF3E9"
+          "id": "#childID.1.1",
+          "type": "group",
+          "optionType": "group",
+          "layout": "horizontal",
+          "properties": { // thuộc tính group của tiêu chí cha
+              "background": "#FFF3E9"
+          },
+          "elements": [
+            {
+              "id": "#childID.1.1.1",
+              "parentId": "#childID.1.1",
+              "type": "label",
+              "properties": {
+                  "value": "Tiêu chí cha", // tiêu đề của tiêu chí cha
+                  "fontSize": "16",
+                  "fontWeight": "bold"
+              },
+              "rule": [],
+              "elements": []
             },
-            "elements": [
-                {
-                    "id": "#childID.1.1.1",
-                    "parentId": "#childID.1.1",
-                    "type": "label",
-                    "properties": {
-                        "value": "Tiêu chí cha", // tiêu đề của tiêu chí cha
-                        "fontSize": "16",
-                        "fontWeight": "bold"
-                    },
-                    "rule": [],
-                    "elements": []
-                },
-                {
+            {
               "id": "#childID.1.1.2",
               "type": "switch",
               "parentId": "#childID.1.1",
@@ -56,7 +56,7 @@
                 }
               ]
             } 
-            ]
+          ]
         },
         {
             "id": "#childID.1.2", // cần map
