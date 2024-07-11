@@ -342,6 +342,7 @@
                                   "parentId": "tempId.tempGroupId.tempAccuId.2.3",
                                   "properties": {
                                     "length": 3,
+                                    "readonly": false,
                                     "description": "Cần chụp ảnh để",
                                     "minimum": 0,
                                     "required": true
