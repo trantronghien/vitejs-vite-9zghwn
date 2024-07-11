@@ -53,7 +53,7 @@
                     "ref": "#childID.1.2.*"
                   },
                   "action": "notifyAttachElement" // lấy lại toàn bộ #childID.1.2.*
-                },
+                }
               ]
             } 
             ]
