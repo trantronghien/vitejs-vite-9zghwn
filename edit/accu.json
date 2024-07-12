@@ -256,9 +256,18 @@
                                       "schema": {
                                         "value": true
                                       },
-                                      "ref": "tempId.tempGroupId.tempAccuId.2.3"
+                                      "ref": "tempId.tempGroupId.tempAccuId.2.3.*"
                                     },
-                                    "action": "hide"
+                                    "action": "notifyDetachElement"
+                                  },
+                                  {
+                                    "condition": {
+                                      "schema": {
+                                        "value": false
+                                      },
+                                      "ref": "tempId.tempGroupId.tempAccuId.2.3.*"
+                                    },
+                                    "action": "notifyAttachElement"
                                   }
                                 ],
                                 "id": "tempId.tempGroupId.tempAccuId.2.1.2",
