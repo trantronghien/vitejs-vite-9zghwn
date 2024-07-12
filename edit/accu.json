@@ -158,7 +158,7 @@
                     "actionName": "notifyActiveRule"
                   }
                 ],
-                "rule": [
+                "rules": [
                   {
                     "condition": {"schema": {}, "ref": "#childID.1.2.4"},
                     "getFrom": {
