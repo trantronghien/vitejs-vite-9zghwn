@@ -152,15 +152,15 @@
                 "textButton": "Generate",
                 "type": "icon",
                 "icon": "assets/images/maintenance_pop_station_inf/ic_arrow_right.svg",
-                "action": [
+                "action": [],
+                "rule": [
                   {
+                    "condition": {"schema": {}, "ref": "#childID.1.2.4"},
                     "getFrom": {
                       "id": "#childID.1.2.3.1",
-                      "fields": [
-                        "value"
-                      ]
+                      "fields": ["value"]
                     },
-                    "ref": "#childID.1.2.4",
+                    "action": "generateAccu",
                     "actionValue": {
                       "id": "tempId.tempGroupId.tempAccuId",
                       "parentId": "tempId.tempGroupId",
@@ -438,8 +438,7 @@
                           ]
                         }
                       ]
-                    },
-                    "actionName": "generateAccu"
+                    }
                   }
                 ]
               }
