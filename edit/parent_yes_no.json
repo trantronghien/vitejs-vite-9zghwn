@@ -64,7 +64,7 @@
             "type": "group",
             "layout": "vertical",
             "properties":{
-              "padding": 1 // padding này là hệ số của padding trên app (giá trị là 0.5 => 0.5 * padding)
+              "paddingHorizontal": 1 // padding này là hệ số của padding trên app (giá trị là 0.5 => 0.5 * padding)
             },
             "elements": [
                 // tiêu chí con 1
