@@ -152,7 +152,12 @@
                 "textButton": "Generate",
                 "type": "icon",
                 "icon": "assets/images/maintenance_pop_station_inf/ic_arrow_right.svg",
-                "action": [],
+                "action": [
+                  {
+                    "ref": "#childID.1.2.3.2",
+                    "actionName": "notifyActiveRule"
+                  }
+                ],
                 "rule": [
                   {
                     "condition": {"schema": {}, "ref": "#childID.1.2.4"},
