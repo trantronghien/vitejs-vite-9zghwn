@@ -143,7 +143,6 @@
             },
             {
               "elements": [],
-              "rule": [],
               "id": "#childID.1.2.3.2",
               "type": "button",
               "parentId": "#childID.1.2.3",
@@ -157,296 +156,296 @@
                     "ref": "#childID.1.2.3.2",
                     "actionName": "notifyActiveRule"
                   }
-                ],
-                "rules": [
-                  {
-                    "condition": {"schema": {}, "ref": "#childID.1.2.4"},
-                    "getFrom": {
-                      "id": "#childID.1.2.3.1",
-                      "fields": ["value"]
-                    },
-                    "action": "generateAccu",
-                    "actionValue": {
-                      "id": "tempId.tempGroupId.tempAccuId",
-                      "parentId": "tempId.tempGroupId",
-                      "type": "group",
-                      "optionType": "numberRating",
-                      "layout": "vertical",
-                      "elements": [
-                        {
-                          "id": "tempId.tempGroupId.tempAccuId.1",
-                          "parentId": "tempId.tempGroupId.tempAccuId",
-                          "type": "group",
-                          "layout": "horizontal",
-                          "elements": [
-                            {
-                              "id": "tempId.tempGroupId.tempAccuId.1.1",
-                              "type": "label",
-                              "parentId": "tempId.tempGroupId.tempAccuId.1",
-                              "properties": {
-                                "value": "Accu tempAccuId",
-                                "fontSize": "14",
-                                "fontWeight": "normal"
-                              }
-                            },
-                            {
-                              "id": "tempId.tempGroupId.tempAccuId.1.2",
-                              "type": "button",
-                              "parentId": "tempId.tempGroupId.tempAccuId.1",
-                              "properties": {
-                                "readonly": false,
-                                "icon": "assets/images/general/arrow_no_tail_down.svg",
-                                "action": [
+                ]
+              },
+              "rule": [
+                {
+                  "condition": {"schema": {}, "ref": "#childID.1.2.4"},
+                  "getFrom": {
+                    "id": "#childID.1.2.3.1",
+                    "fields": ["value"]
+                  },
+                  "action": "generateAccu",
+                  "actionValue": {
+                    "id": "tempId.tempGroupId.tempAccuId",
+                    "parentId": "tempId.tempGroupId",
+                    "type": "group",
+                    "optionType": "numberRating",
+                    "layout": "vertical",
+                    "elements": [
+                      {
+                        "id": "tempId.tempGroupId.tempAccuId.1",
+                        "parentId": "tempId.tempGroupId.tempAccuId",
+                        "type": "group",
+                        "layout": "horizontal",
+                        "elements": [
+                          {
+                            "id": "tempId.tempGroupId.tempAccuId.1.1",
+                            "type": "label",
+                            "parentId": "tempId.tempGroupId.tempAccuId.1",
+                            "properties": {
+                              "value": "Accu tempAccuId",
+                              "fontSize": "14",
+                              "fontWeight": "normal"
+                            }
+                          },
+                          {
+                            "id": "tempId.tempGroupId.tempAccuId.1.2",
+                            "type": "button",
+                            "parentId": "tempId.tempGroupId.tempAccuId.1",
+                            "properties": {
+                              "readonly": false,
+                              "icon": "assets/images/general/arrow_no_tail_down.svg",
+                              "action": [
+                                {
+                                  "ref": "tempId.tempGroupId.tempAccuId.2",
+                                  "actionValue": {},
+                                  "actionName": "show"
+                                },
+                                {
+                                  "actionName": "updateUI",
+                                  "ref": "tempId.tempGroupId.tempAccuId.1.2",
+                                  "actionValue": {
+                                    "down": "assets/images/general/arrow_no_tail_down.svg",
+                                    "up": "assets/images/general/arrow_no_tail_up.svg"
+                                  }
+                                }
+                              ],
+                              "type": "icon"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "tempId.tempGroupId.tempAccuId.2",
+                        "type": "group",
+                        "layout": "vertical",
+                        "properties": {
+                          "isExpand": false
+                        },
+                        "elements": [
+                          {
+                            "layout": "horizontal",
+                            "elements": [
+                              {
+                                "elements": [],
+                                "rule": [],
+                                "id": "tempId.tempGroupId.tempAccuId.2.1.1",
+                                "type": "label",
+                                "parentId": "tempId.tempGroupId.tempAccuId.2.1",
+                                "properties": {
+                                  "value": "Nội trở",
+                                  "fontSize": "14",
+                                  "fontWeight": "normal"
+                                }
+                              },
+                              {
+                                "elements": [],
+                                "rule": [
                                   {
-                                    "ref": "tempId.tempGroupId.tempAccuId.2",
-                                    "actionValue": {},
-                                    "actionName": "show"
+                                    "condition": {
+                                      "schema": {
+                                        "value": true
+                                      },
+                                      "ref": "tempId.tempGroupId.tempAccuId.2.3"
+                                    },
+                                    "action": "hide"
                                   },
                                   {
-                                    "actionName": "updateUI",
-                                    "ref": "tempId.tempGroupId.tempAccuId.1.2",
-                                    "actionValue": {
-                                      "down": "assets/images/general/arrow_no_tail_down.svg",
-                                      "up": "assets/images/general/arrow_no_tail_up.svg"
-                                    }
+                                    "condition": {
+                                      "schema": {
+                                        "value": true
+                                      },
+                                      "ref": "tempId.tempGroupId.tempAccuId.2.3"
+                                    },
+                                    "action": "hide"
                                   }
                                 ],
-                                "type": "icon"
+                                "id": "tempId.tempGroupId.tempAccuId.2.1.2",
+                                "type": "switch",
+                                "parentId": "tempId.tempGroupId.tempAccuId.2.1",
+                                "properties": {
+                                  "onLabel": "Ok",
+                                  "readonly": true,
+                                  "value": false,
+                                  "offLabel": "Not Ok"
+                                }
                               }
-                            }
-                          ]
-                        },
-                        {
-                          "id": "tempId.tempGroupId.tempAccuId.2",
-                          "type": "group",
-                          "layout": "vertical",
-                          "properties": {
-                            "isExpand": false
+                            ],
+                            "id": "tempId.tempGroupId.tempAccuId.2.1",
+                            "type": "group"
                           },
-                          "elements": [
-                            {
-                              "layout": "horizontal",
-                              "elements": [
-                                {
-                                  "elements": [],
-                                  "rule": [],
-                                  "id": "tempId.tempGroupId.tempAccuId.2.1.1",
-                                  "type": "label",
-                                  "parentId": "tempId.tempGroupId.tempAccuId.2.1",
-                                  "properties": {
-                                    "value": "Nội trở",
-                                    "fontSize": "14",
-                                    "fontWeight": "normal"
-                                  }
-                                },
-                                {
-                                  "elements": [],
-                                  "rule": [
-                                    {
-                                      "condition": {
-                                        "schema": {
-                                          "value": true
-                                        },
-                                        "ref": "tempId.tempGroupId.tempAccuId.2.3"
-                                      },
-                                      "action": "hide"
-                                    },
-                                    {
-                                      "condition": {
-                                        "schema": {
-                                          "value": true
-                                        },
-                                        "ref": "tempId.tempGroupId.tempAccuId.2.3"
-                                      },
-                                      "action": "hide"
-                                    }
-                                  ],
-                                  "id": "tempId.tempGroupId.tempAccuId.2.1.2",
-                                  "type": "switch",
-                                  "parentId": "tempId.tempGroupId.tempAccuId.2.1",
-                                  "properties": {
-                                    "onLabel": "Ok",
-                                    "readonly": true,
-                                    "value": false,
-                                    "offLabel": "Not Ok"
-                                  }
-                                }
-                              ],
-                              "id": "tempId.tempGroupId.tempAccuId.2.1",
-                              "type": "group"
-                            },
-                            {
-                              "rule": [
-                                {
-                                  "condition": {
-                                    "schema": {
-                                      "minimum": "optionsValue"
-                                    },
-                                    "ref": "tempId.tempGroupId.tempAccuId.2.1.2"
+                          {
+                            "rule": [
+                              {
+                                "condition": {
+                                  "schema": {
+                                    "minimum": "optionsValue"
                                   },
-                                  "action": "on"
-                                }
-                              ],
-                              "id": "tempId.tempGroupId.tempAccuId.2.2",
-                              "label": "",
-                              "type": "text_number",
-                              "parentId": "4bdc4eca-7062-4a6e-86e4-f9c817e2818f.1",
-                              "properties": {
-                                "readonly": false,
-                                "multiline": false,
-                                "hint": "Nhập số liệu",
-                                "length": 300,
-                                "isDecimal": true,
-                                "required": true
+                                  "ref": "tempId.tempGroupId.tempAccuId.2.1.2"
+                                },
+                                "action": "on"
                               }
-                            },
-                            {
-                              "layout": "vertical",
-                              "elements": [
-                                {
-                                  "rule": [
-                                    {
-                                      "condition": {
-                                        "schema": {
-                                          "required": false
-                                        },
-                                        "ref": "tempId.tempGroupId.tempAccuId.2.3.1"
-                                      },
-                                      "action": "hide"
-                                    }
-                                  ],
-                                  "id": "tempId.tempGroupId.tempAccuId.2.3.1",
-                                  "label": "Ghi chú",
-                                  "type": "text",
-                                  "parentId": "tempId.tempGroupId.tempAccuId.2.3",
-                                  "properties": {
-                                    "readonly": false,
-                                    "multiline": true,
-                                    "hint": "Nhập ghi chú",
-                                    "length": 300,
-                                    "value": "",
-                                    "required": true
-                                  }
-                                },
-                                {
-                                  "elements": [],
-                                  "rule": [
-                                    {
-                                      "condition": {
-                                        "schema": {
-                                          "required": false
-                                        },
-                                        "ref": "tempId.tempGroupId.tempAccuId.2.3.2"
-                                      },
-                                      "action": "hide"
-                                    }
-                                  ],
-                                  "id": "tempId.tempGroupId.tempAccuId.2.3.2",
-                                  "label": "Ảnh Bt",
-                                  "type": "image",
-                                  "parentId": "tempId.tempGroupId.tempAccuId.2.3",
-                                  "properties": {
-                                    "length": 3,
-                                    "readonly": false,
-                                    "description": "Cần chụp ảnh để",
-                                    "minimum": 0,
-                                    "required": true
-                                  }
-                                }
-                              ],
-                              "id": "tempId.tempGroupId.tempAccuId.2.3",
-                              "label": "",
-                              "type": "group"
-                            },
-                            {
-                              "layout": "vertical",
-                              "elements": [
-                                {
-                                  "elements": [],
-                                  "rule": [],
-                                  "id": "tempId.tempGroupId.tempAccuId.2.4.1",
-                                  "type": "label",
-                                  "parentId": "tempId.tempGroupId.tempAccuId.2.4",
-                                  "properties": {
-                                    "value": "Điện áp",
-                                    "fontSize": "14",
-                                    "fontWeight": "normal"
-                                  }
-                                },
-                                {
-                                  "rule": [],
-                                  "id": "tempId.tempGroupId.tempAccuId.2.4.2",
-                                  "type": "text_number",
-                                  "parentId": "tempId.tempGroupId.tempAccuId.2.4",
-                                  "properties": {
-                                    "readonly": false,
-                                    "multiline": false,
-                                    "hint": "Nhập số liệu"
-                                  }
-                                }
-                              ],
-                              "id": "tempId.tempGroupId.tempAccuId.2.4",
-                              "label": "",
-                              "type": "group"
-                            },
-                            {
-                              "layout": "vertical",
-                              "elements": [
-                                {
-                                  "elements": [],
-                                  "rule": [],
-                                  "id": "tempId.tempGroupId.tempAccuId.2.5.1",
-                                  "type": "label",
-                                  "parentId": "tempId.tempGroupId.tempAccuId.2.5",
-                                  "properties": {
-                                    "value": "Ngày đưa vào sử dụng",
-                                    "fontSize": "14",
-                                    "fontWeight": "normal"
-                                  }
-                                },
-                                {
-                                  "rule": [],
-                                  "id": "tempId.tempGroupId.tempAccuId.2.5.2",
-                                  "type": "date",
-                                  "parentId": "tempId.tempGroupId.tempAccuId.2.5",
-                                  "properties": {
-                                    "readonly": false,
-                                    "format": "MM/yyyy",
-                                    "value": "",
-                                    "from": 0,
-                                    "to": 365
-                                  }
-                                }
-                              ],
-                              "id": "tempId.tempGroupId.tempAccuId.2.5",
-                              "label": "",
-                              "type": "group"
-                            },
-                            {
-                              "id": "tempId.tempGroupId.tempAccuId.2.6",
-                              "parentId": "tempId.tempGroupId.tempAccuId.2",
-                              "type": "group",
-                              "elements": [],
-                              "properties": {
-                                "borderColor": "#4b4b4b"
-                              },
-                              "rule": [
-                                {
-                                  "condition": {
-                                    "schema": {},
-                                    "ref": "tempId.tempGroupId.tempAccuId.2.6"
-                                  },
-                                  "action": "warning"
-                                }
-                              ]
+                            ],
+                            "id": "tempId.tempGroupId.tempAccuId.2.2",
+                            "label": "",
+                            "type": "text_number",
+                            "parentId": "4bdc4eca-7062-4a6e-86e4-f9c817e2818f.1",
+                            "properties": {
+                              "readonly": false,
+                              "multiline": false,
+                              "hint": "Nhập số liệu",
+                              "length": 300,
+                              "isDecimal": true,
+                              "required": true
                             }
-                          ]
-                        }
-                      ]
-                    }
+                          },
+                          {
+                            "layout": "vertical",
+                            "elements": [
+                              {
+                                "rule": [
+                                  {
+                                    "condition": {
+                                      "schema": {
+                                        "required": false
+                                      },
+                                      "ref": "tempId.tempGroupId.tempAccuId.2.3.1"
+                                    },
+                                    "action": "hide"
+                                  }
+                                ],
+                                "id": "tempId.tempGroupId.tempAccuId.2.3.1",
+                                "label": "Ghi chú",
+                                "type": "text",
+                                "parentId": "tempId.tempGroupId.tempAccuId.2.3",
+                                "properties": {
+                                  "readonly": false,
+                                  "multiline": true,
+                                  "hint": "Nhập ghi chú",
+                                  "length": 300,
+                                  "value": "",
+                                  "required": true
+                                }
+                              },
+                              {
+                                "elements": [],
+                                "rule": [
+                                  {
+                                    "condition": {
+                                      "schema": {
+                                        "required": false
+                                      },
+                                      "ref": "tempId.tempGroupId.tempAccuId.2.3.2"
+                                    },
+                                    "action": "hide"
+                                  }
+                                ],
+                                "id": "tempId.tempGroupId.tempAccuId.2.3.2",
+                                "label": "Ảnh Bt",
+                                "type": "image",
+                                "parentId": "tempId.tempGroupId.tempAccuId.2.3",
+                                "properties": {
+                                  "length": 3,
+                                  "readonly": false,
+                                  "description": "Cần chụp ảnh để",
+                                  "minimum": 0,
+                                  "required": true
+                                }
+                              }
+                            ],
+                            "id": "tempId.tempGroupId.tempAccuId.2.3",
+                            "label": "",
+                            "type": "group"
+                          },
+                          {
+                            "layout": "vertical",
+                            "elements": [
+                              {
+                                "elements": [],
+                                "rule": [],
+                                "id": "tempId.tempGroupId.tempAccuId.2.4.1",
+                                "type": "label",
+                                "parentId": "tempId.tempGroupId.tempAccuId.2.4",
+                                "properties": {
+                                  "value": "Điện áp",
+                                  "fontSize": "14",
+                                  "fontWeight": "normal"
+                                }
+                              },
+                              {
+                                "rule": [],
+                                "id": "tempId.tempGroupId.tempAccuId.2.4.2",
+                                "type": "text_number",
+                                "parentId": "tempId.tempGroupId.tempAccuId.2.4",
+                                "properties": {
+                                  "readonly": false,
+                                  "multiline": false,
+                                  "hint": "Nhập số liệu"
+                                }
+                              }
+                            ],
+                            "id": "tempId.tempGroupId.tempAccuId.2.4",
+                            "label": "",
+                            "type": "group"
+                          },
+                          {
+                            "layout": "vertical",
+                            "elements": [
+                              {
+                                "elements": [],
+                                "rule": [],
+                                "id": "tempId.tempGroupId.tempAccuId.2.5.1",
+                                "type": "label",
+                                "parentId": "tempId.tempGroupId.tempAccuId.2.5",
+                                "properties": {
+                                  "value": "Ngày đưa vào sử dụng",
+                                  "fontSize": "14",
+                                  "fontWeight": "normal"
+                                }
+                              },
+                              {
+                                "rule": [],
+                                "id": "tempId.tempGroupId.tempAccuId.2.5.2",
+                                "type": "date",
+                                "parentId": "tempId.tempGroupId.tempAccuId.2.5",
+                                "properties": {
+                                  "readonly": false,
+                                  "format": "MM/yyyy",
+                                  "value": "",
+                                  "from": 0,
+                                  "to": 365
+                                }
+                              }
+                            ],
+                            "id": "tempId.tempGroupId.tempAccuId.2.5",
+                            "label": "",
+                            "type": "group"
+                          },
+                          {
+                            "id": "tempId.tempGroupId.tempAccuId.2.6",
+                            "parentId": "tempId.tempGroupId.tempAccuId.2",
+                            "type": "group",
+                            "elements": [],
+                            "properties": {
+                              "borderColor": "#4b4b4b"
+                            },
+                            "rule": [
+                              {
+                                "condition": {
+                                  "schema": {},
+                                  "ref": "tempId.tempGroupId.tempAccuId.2.6"
+                                },
+                                "action": "warning"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
                   }
-                ]
-              }
+                }
+              ]
             }
           ]
         },
