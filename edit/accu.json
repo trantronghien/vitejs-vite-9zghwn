@@ -134,7 +134,7 @@
                 {
                     "action": "refreshIsActive",
                     "condition": {
-                        "ref": "132e326f-75b9-43db-8a72-7140420f5fa4.1.2.3.2",
+                        "ref": "#childID.1.2.3.2",
                         "schema": {
                             "required": false
                         }
