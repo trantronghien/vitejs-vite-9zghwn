@@ -130,7 +130,17 @@
           "elements": [
             {
               "elements": [],
-              "rule": [],
+               "rule": [
+                {
+                    "action": "refreshIsActive",
+                    "condition": {
+                        "ref": "132e326f-75b9-43db-8a72-7140420f5fa4.1.2.3.2",
+                        "schema": {
+                            "required": false
+                        }
+                    }
+                }
+            ],
               "id": "#childID.1.2.3.1",
               "type": "text_number",
               "parentId": "#childID.1.2.3",
