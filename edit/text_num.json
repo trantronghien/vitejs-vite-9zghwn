@@ -76,8 +76,8 @@
           "type": "label",
           "properties": {
             "value": "Ghi chú",
-            "fontSize": "20",
-            "fontWeight": "bold" // normal
+            "fontSize": "14",
+            "fontWeight": "normal" // normal
           },
           "rule": [],
           "elements": []
@@ -120,8 +120,8 @@
           "type": "label",
           "properties": {
             "value": "Ghi chú TPKT",
-            "fontSize": "20",
-            "fontWeight": "bold" // normal
+            "fontSize": "14",
+            "fontWeight": "normal" // normal
           },
           "rule": [],
           "elements": []
