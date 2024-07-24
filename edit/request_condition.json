@@ -115,20 +115,10 @@
           "label": "Ghi chú",
           "type": "text",
           "parentId": "#childID.1",
-          "rule": [
-              {
-                  "condition": {
-                      "schema": {
-                          "required": false
-                      },
-                      "ref": "#childID.1.3"
-                  },
-                  "action": "hide"
-              }
-          ],
+          "rule": [],
           "properties": {
-              "required": "#options.isRequireNote" // bắt buộc ghi chú
-"readonly": false,
+              "required": "#options.isRequireNote", // bắt buộc ghi chú
+              "readonly": false,
               "multiline": false,
               "hint": "Xin nhập ghi chú",
               "length": 300,
@@ -141,20 +131,10 @@
           "type": "image",
           "parentId": "#childID.1",
           "elements": [],
-          "rule": [
-              {
-                  "condition": {
-                      "schema": {
-                          "required": false
-                      },
-                      "ref": "#childID.1.4"
-                  },
-                  "action": "hide"
-              }
-          ],
+          "rule": [],
           "properties": {
-              "required": "#options.required" // bắt buộc hình ảnh
-"readonly": false,
+              "required": "#options.required", // bắt buộc hình ảnh
+              "readonly": false,
               "description": "Cần chụp ảnh để",
               "minimum": 0
           }

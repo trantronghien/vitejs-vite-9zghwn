@@ -130,7 +130,7 @@
           "elements": [
             {
               "elements": [],
-               "rule": [
+              "rule": [
                 {
                     "action": "refreshIsActive",
                     "condition": {
@@ -140,7 +140,7 @@
                         }
                     }
                 }
-            ],
+              ],
               "id": "#childID.1.2.3.1",
               "type": "text_number",
               "parentId": "#childID.1.2.3",
@@ -323,17 +323,7 @@
                             "layout": "vertical",
                             "elements": [
                               {
-                                "rule": [
-                                  {
-                                    "condition": {
-                                      "schema": {
-                                        "required": false
-                                      },
-                                      "ref": "tempId.tempGroupId.tempAccuId.2.3.1"
-                                    },
-                                    "action": "hide"
-                                  }
-                                ],
+                                "rule": [],
                                 "id": "tempId.tempGroupId.tempAccuId.2.3.1",
                                 "label": "Ghi chú",
                                 "type": "text",
@@ -349,17 +339,7 @@
                               },
                               {
                                 "elements": [],
-                                "rule": [
-                                  {
-                                    "condition": {
-                                      "schema": {
-                                        "required": false
-                                      },
-                                      "ref": "tempId.tempGroupId.tempAccuId.2.3.2"
-                                    },
-                                    "action": "hide"
-                                  }
-                                ],
+                                "rule": [],
                                 "id": "tempId.tempGroupId.tempAccuId.2.3.2",
                                 "label": "Ảnh Bt",
                                 "type": "image",

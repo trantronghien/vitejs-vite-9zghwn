@@ -48,17 +48,7 @@
             "description": "Cần chụp ảnh để",
             "minimum": 0
           },
-          "rule": [
-            {
-              "action": "hide",
-              "condition": {
-                "ref": "#childID.2.2",
-                "schema": {
-                  "required": false
-                }
-              }
-            }
-          ],
+          "rule": [],
           "elements": []
         }
       ]
@@ -93,17 +83,7 @@
             "multiline": false,
             "hint": "Xin nhập ghi chú"
           },
-          "rule": [
-            {
-              "action": "hide",
-              "condition": {
-                "ref": "#childID.3",
-                "schema": {
-                  "required": false
-                }
-              }
-            }
-          ]
+          "rule": []
         }
       ]
     },
