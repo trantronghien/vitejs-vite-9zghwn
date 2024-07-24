@@ -121,7 +121,7 @@
               "required": "#options.isRequireNote", // bắt buộc ghi chú
               "readonly": false,
               "multiline": false,
-              "hint": "Xin nhập ghi chú",
+              "hint": "Nhập ghi chú",
               "length": 300,
               "value": ""
           }

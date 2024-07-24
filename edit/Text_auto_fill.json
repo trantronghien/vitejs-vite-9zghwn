@@ -19,23 +19,60 @@
     },
     {
       "id": "#childID.1.2",
+      "type": "text",
+      "parentId": "#childID.1",
+      "properties": {
+        "autoFiledBy": "#options.autoFiledBy",
+        "readonly": true
+      },
+      "rule": []
+    },
+    {
+      "id": "#childID.1.3",
       "parentId": "#childID.1",
       "type": "group",
       "layout": "horizontal",
       "elements": [
         {
-          "id": "#childID.1.2.1",
-          "type": "text",
-          "parentId": "#childID.1.2",
+          "id": "#childID.1.3.1",
+          "parentId": "#childID.1.3",
+          "type": "group",
+          "layout": "vertical",
           "properties": {
-            "autoFiledBy": "#options.autoFiledBy",
-            "readonly": true
+            "isExpand": "#options.isRequireNote"
           },
-          "rule": []
+          "elements": [
+            {
+              "id": "#childID.1.3.1.1",
+              "parentId": "#childID.1.3.1",
+              "type": "label",
+              "properties": {
+                "value": "Ghi chú",
+                "fontSize": "14",
+                "fontWeight": "normal" // normal
+              },
+              "rule": [],
+              "elements": []
+            },
+            {
+              "id": "#childID.1.3.1.2",
+              "parentId": "#childID.1.3.1",
+              "type": "text",
+              "properties": {
+                "required": "#options.isRequireNote", // bắt buộc ghi chú
+                "value": "",
+                "readonly": false,
+                "length": 300,
+                "multiline": false,
+                "hint": "Nhập ghi chú"
+              },
+              "rule": []
+            }
+          ]
         },
         {
-          "id": "#childID.1.2.2",
-          "parentId": "#childID.1.2",
+          "id": "#childID.1.3.2",
+          "parentId": "#childID.1.3",
           "type": "image",
           "label": "Ảnh Bt",
           "properties": {
@@ -48,43 +85,6 @@
           },
           "rule": [],
           "elements": []
-        }
-      ]
-    },
-    {
-      "id": "#childID.1.3",
-      "parentId": "#childID.1",
-      "type": "group",
-      "layout": "vertical",
-      "properties": {
-        "isExpand": "#options.isRequireNote"
-      },
-      "elements": [
-        {
-          "id": "#childID.1.3.1",
-          "parentId": "#childID.1.3",
-          "type": "label",
-          "properties": {
-            "value": "Ghi chú",
-            "fontSize": "14",
-            "fontWeight": "normal" // normal
-          },
-          "rule": [],
-          "elements": []
-        },
-        {
-          "id": "#childID.1.3.2",
-          "parentId": "#childID.1.3",
-          "type": "text",
-          "properties": {
-            "required": "#options.isRequireNote", // bắt buộc ghi chú
-            "value": "",
-            "readonly": false,
-            "length": 300,
-            "multiline": false,
-            "hint": "Xin nhập ghi chú"
-          },
-          "rule": []
         }
       ]
     },

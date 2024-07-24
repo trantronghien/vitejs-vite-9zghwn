@@ -59,7 +59,7 @@
         "isDecimal": true,
         "length": 300,
         "multiline": false,
-        "hint": "Nhập điện áp"
+        "hint": "Nhập dữ liệu"
       },
       "rule": [
         {
@@ -91,7 +91,7 @@
             "readonly": false,
             "length": 300,
             "multiline": false,
-            "hint": "Xin nhập ghi chú"
+            "hint": "Nhập ghi chú"
           },
           "rule": []
         },

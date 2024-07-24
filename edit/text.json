@@ -21,7 +21,7 @@
       "id": "#childID.2",
       "parentId": "#childID",
       "type": "group",
-      "layout": "horizontal",
+      "layout": "vertical",
       "elements": [
         {
           "id": "#childID.2.1",
