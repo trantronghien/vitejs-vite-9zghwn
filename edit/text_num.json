@@ -78,7 +78,7 @@
           "type": "text",
           "properties": {
             "required": "#options.isRequireNote", // bắt buộc ghi chú
-            "value": "true",
+            "value": "",
             "readonly": false,
             "length": 300,
             "multiline": false,

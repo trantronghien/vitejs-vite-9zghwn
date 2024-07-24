@@ -22,6 +22,7 @@
       "parentId": "#childID.1.1",
       "type": "image",
       "properties": {
+        "readonly": false,
         "required": true,
         "description": "Cần chụp ảnh để",
         "minimum": 0

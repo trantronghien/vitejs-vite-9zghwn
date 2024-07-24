@@ -88,7 +88,7 @@
           "properties": {
             "required": "#options.isRequireNote", // bắt buộc ghi chú
             "value": "false",
-            "readonly": true,
+            "readonly": false,
             "length": 300,
             "multiline": false,
             "hint": "Xin nhập ghi chú"
