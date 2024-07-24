@@ -41,6 +41,7 @@
           "type": "text",
           "label": "Ghi chú",
           "properties": {
+            "isExpand": "#options.isRequireNote",
             "required": "#options.isRequireNote", // bắt buộc ghi chú
             "value": "",
             "readonly": false,
@@ -56,8 +57,9 @@
           "type": "image",
           "label": "Ảnh Bt",
           "properties": {
-            "readonly": false,
+            "isExpand": "#options.isRequireImage",
             "required": "#options.isRequireImage", // bắt buộc có ảnh
+            "readonly": false,
             "description": "Cần chụp ảnh để",
             "minimum": 0
           },

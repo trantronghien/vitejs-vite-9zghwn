@@ -43,6 +43,7 @@
           "type": "image",
           "label": "Ảnh Bt",
           "properties": {
+            "isExpand": "#options.isRequireImage",
             "readonly": false,
             "required": "#options.isRequireImage", // bắt buộc có ảnh
             "length": 3,
@@ -77,6 +78,7 @@
           "parentId": "#childID.3",
           "type": "text",
           "properties": {
+            "isExpand": "#options.isRequireNote",
             "required": "#options.isRequireNote", // bắt buộc ghi chú
             "value": "",
             "readonly": false,

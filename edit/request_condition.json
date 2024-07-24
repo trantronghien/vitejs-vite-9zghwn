@@ -117,6 +117,7 @@
           "parentId": "#childID.1",
           "rule": [],
           "properties": {
+              "isExpand": "#options.isRequireNote",
               "required": "#options.isRequireNote", // bắt buộc ghi chú
               "readonly": false,
               "multiline": false,
@@ -133,7 +134,8 @@
           "elements": [],
           "rule": [],
           "properties": {
-              "required": "#options.required", // bắt buộc hình ảnh
+              "isExpand": "#options.isRequireImage",
+              "required": "#options.isRequireImage", // bắt buộc hình ảnh
               "readonly": false,
               "description": "Cần chụp ảnh để",
               "minimum": 0
