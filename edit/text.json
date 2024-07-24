@@ -60,6 +60,9 @@
       "parentId": "#childID",
       "type": "group",
       "layout": "vertical",
+      "properties": {
+        "isExpand": "#options.isRequireNote"
+      },
       "elements": [
         {
           "id": "#childID.3.1",
@@ -78,7 +81,6 @@
           "parentId": "#childID.3",
           "type": "text",
           "properties": {
-            "isExpand": "#options.isRequireNote",
             "required": "#options.isRequireNote", // bắt buộc ghi chú
             "value": "",
             "readonly": false,
