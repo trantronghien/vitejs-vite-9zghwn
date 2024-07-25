@@ -4,7 +4,7 @@
   "id": "#childID.1",
   "label": "tiêu chí text invetory",
   "type": "group",
-  "properties":{
+  "properties": {
     "borderTopWidth": 6
   },
   "elements": [
@@ -22,7 +22,7 @@
           "properties": {
             "value": "#options.label",
             "fontSize": "14",
-            "fontWeight": "normal" // normal
+            "fontWeight": "normal" 
           }
         },
         {
