@@ -4,6 +4,9 @@
   "id": "#childID.1",
   "label": "tiêu chí text invetory",
   "type": "group",
+  "properties":{
+    "borderTopWidth": 6
+  },
   "elements": [
     {
       "id": "#childID.1.1",

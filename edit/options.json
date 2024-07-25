@@ -3,6 +3,9 @@
   "type": "group",
   "label": "Tiêu chí selected",
   "layout": "vertical",
+  "properties":{
+    "borderTopWidth": 6
+  },
   "elements": [
     {
       "id": "#childID.1.1",

@@ -3,6 +3,9 @@
   "type": "group",
   "layout": "vertical",
   "optionType": "requestCondition",
+  "properties":{
+    "borderTopWidth": 6
+  },
   "elements": [
       {
           "id": "#childID.1.1",

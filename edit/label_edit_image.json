@@ -3,6 +3,9 @@
   "type": "group",
   "label": "Chụp ảnh đối tác",
   "layout": "vertical",
+  "properties":{
+    "borderTopWidth": 6
+  },
   "elements": [
     {
       "id": "#childID.1.1.1",

@@ -4,6 +4,9 @@
   "label": "Tiêu đề của tiêu chí",
   "optionType": "switch", //Loại tiêu chí (Text, Number, Number range, có/ không, ok/nok, Dữ liệu từ inventory...)
   "layout": "vertical",
+  "properties":{
+    "borderTopWidth": 6
+  },
   "elements": [
     {
       "id": "#childID.1.1",
