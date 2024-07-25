@@ -3,13 +3,15 @@
   "type": "group",
   "label": "Tiêu chí selected",
   "layout": "vertical",
+  "properties":{
+    "borderTopWidth": 6
+  },
   "elements": [
     {
       "id": "#childID.1.1",
       "parentId": "#childID.1",
       "type": "label",
       "properties": {
-        "borderTopWidth": 6,
         "value": "#options.label",
         "fontSize": "14",
         "fontWeight": "normal" // normal
