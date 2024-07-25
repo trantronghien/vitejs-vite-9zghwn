@@ -149,6 +149,7 @@
               "parentId": "#childID.1.2.3",
               "properties": {
                 "maximum": "50",
+                "required": true,
                 "readonly": false,
                 "isDecimal": false,
                 "minimum": "0"
