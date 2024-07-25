@@ -91,7 +91,7 @@
             {
               "id": "#childID.1.2.1.2",
               "type": "option",
-              "parentId": "#childID.1.2.1.*.*.2.2",
+              "parentId": "#childID.1.2.1",
               "properties": {
                 "value": [],
                 "type": "option",
@@ -104,7 +104,7 @@
                 {
                   "condition": {
                     "schema": {},
-                    "ref": "#childID.1.2.4"
+                    "ref": "#childID.1.2.4.*.*.2.2"
                   },
                   "action": "notifyActiveRule"
                 }
