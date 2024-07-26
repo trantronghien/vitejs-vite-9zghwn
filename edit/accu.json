@@ -335,7 +335,6 @@
                                 "type": "text",
                                 "parentId": "tempId.tempGroupId.tempAccuId.2.3",
                                 "properties": {
-                                  "required": "#options.isRequireNote",
                                   "readonly": false,
                                   "multiline": true,
                                   "hint": "Nhập ghi chú",
@@ -351,7 +350,6 @@
                                 "type": "image",
                                 "parentId": "tempId.tempGroupId.tempAccuId.2.3",
                                 "properties": {
-                                  "required": "#options.isRequireImage",
                                   "length": 3,
                                   "readonly": false,
                                   "description": "Cần chụp ảnh để",
