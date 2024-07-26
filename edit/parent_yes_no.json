@@ -30,7 +30,13 @@
               "id": "#childID.1.1.2",
               "type": "switch",
               "parentId": "#childID.1.1",
-              "properties": {"value": true, "readonly": false, "onLabel": "Yes", "offLabel": "No"},
+              "properties": {
+                "required": true,
+                "value": true, 
+                "readonly": false, 
+                "onLabel": "Yes", 
+                "offLabel": "No"
+              },
               "elements": [],
               "rule": [
                 {

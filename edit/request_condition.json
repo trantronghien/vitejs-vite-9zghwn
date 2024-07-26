@@ -123,7 +123,7 @@
               "isExpand": "#options.isRequireNote",
               "required": "#options.isRequireNote", // bắt buộc ghi chú
               "readonly": false,
-              "multiline": false,
+              "multiline": true,
               "hint": "Nhập ghi chú",
               "length": 300,
               "value": ""

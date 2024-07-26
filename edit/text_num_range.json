@@ -30,6 +30,7 @@
           "type": "switch",
           "parentId": "#childID.1.1",
           "properties": {
+            "required": true,
             "value": false,
             "readonly": true,
             "offLabel": "Not Ok",
@@ -57,7 +58,7 @@
       "type": "text_number",
       "label": "",
       "properties": {
-        "required": "#options.isRequireNote", // bắt buộc ghi chú
+        "required": true,
         "readonly": false,
         "isDecimal": true,
         "length": 300,
@@ -89,11 +90,12 @@
           "type": "text",
           "label": "Ghi chú",
           "properties": {
+            "isExpand": "#options.isRequireNote",
             "required": "#options.isRequireNote", // bắt buộc ghi chú
             "value": "false",
             "readonly": false,
             "length": 300,
-            "multiline": false,
+            "multiline": true,
             "hint": "Nhập ghi chú"
           },
           "rule": []
@@ -105,6 +107,7 @@
           "label": "Ảnh Bt",
           "properties": {
             "readonly": false,
+            "isExpand": "#options.isRequireImage",
             "required": "#options.isRequireImage", // bắt buộc có ảnh
             "description": "Cần chụp ảnh để",
             "minimum": 0

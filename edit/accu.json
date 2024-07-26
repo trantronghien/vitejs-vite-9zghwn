@@ -30,6 +30,7 @@
           "type": "switch",
           "parentId": "#childID.1.1",
           "properties": {
+            "required": true,
             "value": true,
             "readonly": false,
             "onLabel": "Yes",
@@ -93,6 +94,7 @@
               "type": "option",
               "parentId": "#childID.1.2.1",
               "properties": {
+                "required": true,
                 "value": [],
                 "type": "option",
                 "readonly": false,
@@ -287,6 +289,7 @@
                                 "type": "switch",
                                 "parentId": "tempId.tempGroupId.tempAccuId.2.1",
                                 "properties": {
+                                  "required": true,
                                   "onLabel": "Ok",
                                   "readonly": true,
                                   "value": false,
@@ -336,8 +339,7 @@
                                   "multiline": true,
                                   "hint": "Nhập ghi chú",
                                   "length": 300,
-                                  "value": "",
-                                  "required": true
+                                  "value": ""
                                 }
                               },
                               {
@@ -351,8 +353,7 @@
                                   "length": 3,
                                   "readonly": false,
                                   "description": "Cần chụp ảnh để",
-                                  "minimum": 0,
-                                  "required": true
+                                  "minimum": 0
                                 }
                               }
                             ],
@@ -381,6 +382,7 @@
                                 "type": "text_number",
                                 "parentId": "tempId.tempGroupId.tempAccuId.2.4",
                                 "properties": {
+                                  "required": true,
                                   "readonly": false,
                                   "multiline": false,
                                   "hint": "Nhập số liệu"
@@ -412,6 +414,7 @@
                                 "type": "date",
                                 "parentId": "tempId.tempGroupId.tempAccuId.2.5",
                                 "properties": {
+                                  "required": true,
                                   "readonly": false,
                                   "format": "MM/yyyy",
                                   "value": "",

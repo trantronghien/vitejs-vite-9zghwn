@@ -24,6 +24,7 @@
       "parentId": "#childID.1",
       "type": "option",
       "properties": {
+        "required": true,
         "readonly": false,
         "value": "#options.selectEnum[0]", // tùy chọn mặc định
         "enum": "#options.selectEnum",
@@ -49,7 +50,7 @@
             "value": "",
             "readonly": false,
             "length": 300,
-            "multiline": false,
+            "multiline": true,
             "hint": "Nhập ghi chú"
           },
           "rule": []

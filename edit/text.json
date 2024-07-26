@@ -22,76 +22,76 @@
     },
     {
       "id": "#childID.2",
+      "type": "text",
       "parentId": "#childID",
-      "type": "group",
-      "layout": "vertical",
-      "elements": [
-        {
-          "id": "#childID.2.1",
-          "type": "text",
-          "parentId": "#childID.2",
-          "properties": {
-            "value": "",
-            "readonly": false,
-            "required": true,
-            "length": 300,
-            "multiline": false,
-            "hint": "Xin nhập dữ liệu"
-          },
-          "rule": []
-        },
-        {
-          "id": "#childID.2.2",
-          "parentId": "#childID.2",
-          "type": "image",
-          "label": "Ảnh Bt",
-          "properties": {
-            "isExpand": "#options.isRequireImage",
-            "readonly": false,
-            "required": "#options.isRequireImage", // bắt buộc có ảnh
-            "length": 3,
-            "description": "Cần chụp ảnh để",
-            "minimum": 0
-          },
-          "rule": [],
-          "elements": []
-        }
-      ]
+      "properties": {
+        "value": "",
+        "readonly": false,
+        "required": true,
+        "length": 300,
+        "multiline": false,
+        "hint": "Xin nhập dữ liệu"
+      },
+      "rule": []
     },
     {
       "id": "#childID.3",
       "parentId": "#childID",
       "type": "group",
       "layout": "vertical",
-      "properties": {
-        "isExpand": "#options.isRequireNote"
-      },
       "elements": [
         {
           "id": "#childID.3.1",
           "parentId": "#childID.3",
-          "type": "label",
+          "type": "group",
+          "layout": "vertical",
           "properties": {
-            "value": "Ghi chú",
-            "fontSize": "14",
-            "fontWeight": "normal" // normal
+            "isExpand": "#options.isRequireNote"
           },
-          "rule": [],
-          "elements": []
+          "elements": [
+            {
+              "id": "#childID.3.1.1",
+              "parentId": "#childID.3.1",
+              "type": "label",
+              "properties": {
+                "value": "Ghi chú",
+                "fontSize": "14",
+                "fontWeight": "normal" // normal
+              },
+              "rule": [],
+              "elements": []
+            },
+            {
+              "id": "#childID.3.1.2",
+              "parentId": "#childID.3.1",
+              "type": "text",
+              "properties": {
+                "required": "#options.isRequireNote", // bắt buộc ghi chú
+                "value": "",
+                "readonly": false,
+                "length": 300,
+                "multiline": true,
+                "hint": "Xin nhập ghi chú"
+              },
+              "rule": []
+            }
+          ]
         },
         {
           "id": "#childID.3.2",
           "parentId": "#childID.3",
-          "type": "text",
+          "type": "image",
+          "label": "Ảnh Bt",
           "properties": {
-            "required": "#options.isRequireNote", // bắt buộc ghi chú
-            "value": "",
+            "isExpand": "#options.isRequireImage",
+            "required": "#options.isRequireImage", // bắt buộc có ảnh
             "readonly": false,
-            "length": 300,
-            "multiline": false,
-            "hint": "Xin nhập ghi chú"
+            "length": 3,
+            "description": "Cần chụp ảnh để",
+            "minimum": 0
           },
-          "rule": []
+          "rule": [],
+          "elements": []
         }
       ]
     },

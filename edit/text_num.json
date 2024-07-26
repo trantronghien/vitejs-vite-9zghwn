@@ -71,7 +71,7 @@
                 "value": "",
                 "readonly": false,
                 "length": 300,
-                "multiline": false,
+                "multiline": true,
                 "hint": "Nhập ghi chú"
               },
               "rule": []

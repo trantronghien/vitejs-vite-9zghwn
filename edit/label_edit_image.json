@@ -42,7 +42,7 @@
         "required": true,
         "readonly": false,
         "length": 300,
-        "multiline": false,
+        "multiline": true,
         "hint": "Nhập Nhận xét của KTV"
       },
       "rule": []

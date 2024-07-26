@@ -32,6 +32,7 @@
           "label": "Kiểm tra cửa chính ...",
           "properties": {
             "value": false,
+            "required": true,
             "readonly": false,
             "offLabel": "Not Ok",
             "onLabel": "Ok"
@@ -64,11 +65,12 @@
           "type": "text",
           "label": "Ghi chú",
           "properties": {
+            "isExpand": "#options.isRequireNote",
             "required": "#options.isRequireNote", // bắt buộc ghi chú
             "value": "",
             "readonly": false,
             "length": 300,
-            "multiline": false,
+            "multiline": true,
             "hint": "Nhập ghi chú"
           },
           "rule": []
@@ -80,6 +82,7 @@
           "label": "Ảnh Bt",
           "properties": {
             "readonly": false,
+            "isExpand": "#options.isRequireImage",
             "required": "#options.isRequireImage", // bắt buộc có ảnh
             "description": "Cần chụp ảnh để",
             "minimum": 0

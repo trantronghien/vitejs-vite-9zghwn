@@ -25,6 +25,7 @@
       "type": "text",
       "parentId": "#childID.1",
       "properties": {
+        "required": true,
         "autoFiledBy": "#options.autoFiledBy",
         "readonly": true
       },
@@ -66,7 +67,7 @@
                 "value": "",
                 "readonly": false,
                 "length": 300,
-                "multiline": false,
+                "multiline": true,
                 "hint": "Nhập ghi chú"
               },
               "rule": []
