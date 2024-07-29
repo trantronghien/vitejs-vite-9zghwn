@@ -82,7 +82,7 @@
       "id": "#childID.1.3",
       "label": "",
       "type": "group",
-      "layout": "horizontal",
+      "layout": "vertical",
       "elements": [
         {
           "id": "#childID.1.3.1",
