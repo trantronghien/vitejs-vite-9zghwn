@@ -60,7 +60,7 @@
                                 "params": {
                                     "timeQuery": 120,
                                     "timeCompare": 10,
-                                    "typeDevice": "123"
+                                    "typeDevice": "ml" // fill dữ liệu theo loại codition (máy lạnh: ml, máy phát điện: mpd)
                                 }
                               },
                               "actionName": "update"
