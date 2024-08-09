@@ -54,13 +54,14 @@
                           {
                               "ref": "#childID.1.2",
                               "actionValue": {
-                                  "url": "#options.url",
-                                  "method": "GET",
-                                  "params": {
-                                      "timeQuery": 120,
-                                      "timeCompare": 10,
-                                      "typeDevice": "123"
-                                  }
+                                //   "url": "#options.url",
+                                "url": "/resource/internet-infra/maintenance/api/m/v1/checklist/stationpop/requestCondition",
+                                "method": "GET",
+                                "params": {
+                                    "timeQuery": 120,
+                                    "timeCompare": 10,
+                                    "typeDevice": "123"
+                                }
                               },
                               "actionName": "update"
                           }
