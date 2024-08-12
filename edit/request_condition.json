@@ -77,6 +77,8 @@
           "parentId": "#childID.1",
           "type": "results",
           "properties": {
+              "required": true,
+              "readonly": false,
               "value": null,
               "onLabel": "Not Ok",
               "offLabel": "Ok",
