@@ -1,6 +1,5 @@
 {
   "id": "#childID.1",
-  "label": "Dòng tải L1-N(A) ....",
   "type": "group",
   "optionType": "text", //Loại tiêu chí (Text, Number, Number range, có/ không, ok/nok, Dữ liệu từ inventory...)
   "layout": "vertical",

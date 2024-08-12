@@ -13,7 +13,6 @@
       "type": "label",
       "properties": {
         "value": "#options.label",
-        "required": true,
         "fontSize": "14",
         "fontWeight": "normal" // normal
       },
