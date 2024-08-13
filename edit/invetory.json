@@ -46,11 +46,10 @@
                 "actionValue": {
                   "method": "GET",
                   "params": {
-                    "typeDevice": "typeDevice",
-                    "keyMapping": "keyMapping",
-                    "deviceName": "deviceName"
+                    "typeDevice": "mayphatdien", // fill dữ liệu theo loại condition (máy lạnh: ml, máy phát điện: mpd)
+                    "keyMapping": "PopName" // fill theo lựa chọn người dùng
                   },
-                  "url": "#options.url"
+                  "url": "/resource/internet-infra/maintenance/api/m/v1/checklist/comp/getInventory"
                 },
                 "actionName": "update"
               }

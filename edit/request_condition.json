@@ -54,7 +54,6 @@
                           {
                               "ref": "#childID.1.2",
                               "actionValue": {
-                                //   "url": "#options.url",
                                 "url": "/resource/internet-infra/maintenance/api/m/v1/checklist/stationpop/requestCondition",
                                 "method": "GET",
                                 "params": {
